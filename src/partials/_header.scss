@@ -1,5 +1,5 @@
 .container_small{
-  background-color: pink;
+  // background-color: pink;
 }
 header{
 
@@ -11,7 +11,7 @@ header{
 }
 .nav_top{
   height: 50px;
-  background-color: lightgray;
+  // background-color: lightgray;
 }
 .social, .account, .logo, .nav_menu{
   @include display_flex;
@@ -26,6 +26,50 @@ header{
     i{
       color: $t_gray;
       font-size: $font_14;
+      margin-right: 20px;
     }
   }
+}
+.account{
+  font-size: $font_16;
+  font-weight: 400;
+  color: $t_gray;
+  .shopping{
+  }
+  .btn_account{
+    height: 100%;
+    border: none;
+    font-size: $font_16;
+    font-weight: 300;
+    color: $t_gray;
+    border-right: 1px solid #a0a5a5;
+    border-left: 1px solid #a0a5a5;
+    margin-left: 20px;
+    padding: 0 10px;
+    background-color: #fff;
+    i{
+      font-size: $font_11;
+      margin: 0 10px;
+      color: $t_gray;
+    }
+  }
+  .btn_cart{
+    height: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-size: $font_14;
+    font-weight: 300;
+    padding: 0 40px;
+    background-color: #fafafa;
+    cursor: pointer;
+    i{
+      font-size: $font_12;
+      color: $shark;
+      margin: 0 10px;
+    }
+  }
+}
+.btn_account:hover{
+  background-color: #fafafa;
+  cursor: pointer;
 }

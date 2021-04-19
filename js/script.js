@@ -24,6 +24,14 @@ var app = new Vue(
           prefix: 'fa-',
         },
     ],
+      shoppingNav:[
+        {
+          name: "Shopping Cart",
+          nameBtn: "My Account",
+          nameBtnCart: "Cart",
+        }
+      ],
+
+      }
     },
-  }
 );

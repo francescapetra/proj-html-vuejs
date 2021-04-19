@@ -17,14 +17,20 @@
     <div id="root">
 
       <header class="container_small">
+        <!-- top nav -->
         <nav class="nav_top">
           <div class="social">
             <ul v-for="social in iconsSocial">
               <li><i :class="social.family + social.prefix + social.name"></i></li>
             </ul>
           </div>
-          <div class="account">d e f </div>
+          <div v-for="menu in shoppingNav" class="account">
+            <p class="shopping">{{menu.name}}</p>
+            <button class="btn_account" type="button" name="button">{{menu.nameBtn}}<i class="fas fa-chevron-down"></i></button>
+            <button class="btn_cart" type="button" name="button"><i class="fas fa-shopping-cart"></i>{{menu.nameBtnCart}}<i class="fas fa-chevron-down"></i></button>
+          </div>
         </nav>
+        <!-- sub nav -->
         <nav class="nav_sub">
           <div class="logo">logo</div>
           <div class="nav_menu">lista</div>

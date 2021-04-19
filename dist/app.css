@@ -2,3 +2,12 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: lightgreen;
 }
+
+.container {
+  width: 100%;
+}
+
+.container_small {
+  margin: auto;
+  width: 75%;
+}

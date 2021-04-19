@@ -1,3 +1,13 @@
 .hero{
   height: 650px;
+  @include display_flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .container_small{
+    text-align: center;
+  }
 }

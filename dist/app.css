@@ -21,21 +21,53 @@ button {
   outline: none;
 }
 
-.btn_blue {
+h1 {
+  color: #fff;
+  font-size: 78px;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+.p_hero {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.btn {
   display: inline-block;
   padding: 13px 30px;
   border-radius: 30px;
-  font-size: 12px;
   font-weight: bold;
-  color: #fff;
   border: none;
-  background-color: #427ed5;
   cursor: pointer;
   text-transform: uppercase;
 }
 
+.btn_blue {
+  font-size: 12px;
+  color: #fff;
+  background-color: #427ed5;
+}
+
 .btn_blue:hover {
   opacity: 0.9;
+}
+
+.btn_hero {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.btn_hero:hover {
+  opacity: 0.7;
 }
 
 .nav_top, .nav_sub {
@@ -127,7 +159,7 @@ div.logo img {
 .nav_menu ul li {
   list-style: none;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 .nav_menu ul li a {
   text-decoration: none;
@@ -155,4 +187,15 @@ i.search {
 
 .hero {
   height: 650px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero .container_small {
+  text-align: center;
 }

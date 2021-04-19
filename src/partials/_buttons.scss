@@ -1,15 +1,30 @@
-.btn_blue{
+.btn{
   display: inline-block;
   padding: 13px 30px;
   border-radius: 30px;
-  font-size: $font_12;
   font-weight: bold;
-  color: $whi;
   border: none;
-  background-color: $blue_sky;
   cursor: pointer;
   text-transform: uppercase;
+
+}.btn_blue{
+  font-size: $font_12;
+  color: $whi;
+  background-color: $blue_sky;
+
 }
 .btn_blue:hover{
-opacity: 0.9;
+  opacity: 0.9;
+}
+.btn_hero{
+  color: $whi;
+  font-size: $font_16;
+  margin-right: 10px;
+  border: 3px solid $whi;
+  background-color: transparent;
+  background: rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+.btn_hero:hover{
+  opacity: 0.7;
 }

@@ -9,16 +9,18 @@ header{
   justify-content: space-between;
   padding: 0 10px;
 }
+.nav_container{
+  box-shadow: 0 0 1px #333333;
+}
 .nav_top{
   height: 50px;
-  // background-color: lightgray;
 }
 .social, .account, .logo, .nav_menu{
   @include display_flex;
 }
 .nav_sub{
   height: 100px;
-  background-color: lightblue;
+
 }
 .social{
   ul li{
@@ -37,13 +39,14 @@ header{
   .shopping{
   }
   .btn_account{
+    display: inline-block;
     height: 100%;
     border: none;
     font-size: $font_16;
-    font-weight: 300;
     color: $t_gray;
-    border-right: 1px solid #a0a5a5;
-    border-left: 1px solid #a0a5a5;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
     margin-left: 20px;
     padding: 0 10px;
     background-color: #fff;
@@ -58,7 +61,7 @@ header{
     border: none;
     text-transform: uppercase;
     font-size: $font_14;
-    font-weight: 300;
+    font-weight: 200;
     padding: 0 40px;
     background-color: #fafafa;
     cursor: pointer;
@@ -71,5 +74,41 @@ header{
 }
 .btn_account:hover{
   background-color: #fafafa;
+  cursor: pointer;
+}
+div.logo{
+  width: 150px;
+  img{
+    width: 100%;
+  }
+}
+.nav_menu{
+  ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    a{
+      text-decoration: none;
+      color: $shark;
+      font-weight:300;
+    }
+    i{
+      font-size: $font_9;
+      vertical-align:middle;
+      margin-left: 10px;
+      margin-bottom: 2px;
+
+    }
+    a:hover, a:focus{
+      color: $blue_sky;
+      border-top: 3px solid $blue_sky;
+      padding-top: 37px;
+      height: 100%;
+    }
+  }
+}
+i.search{
+  font-size: $font_12;
+  margin-left: 30px;
   cursor: pointer;
 }

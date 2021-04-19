@@ -31,6 +31,26 @@ var app = new Vue(
           nameBtnCart: "Cart",
         }
       ],
+      menuListNav:[
+        {
+          link: "Home"
+        },
+        {
+        link: "Shop"
+        },
+        {
+          link: "Products"
+        },
+        {
+          link: "Categories"
+        },
+        {
+          link: "News"
+        },
+        {
+          link: "Elements"
+        },
+      ],
 
       }
     },

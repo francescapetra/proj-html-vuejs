@@ -21,10 +21,27 @@ button {
   outline: none;
 }
 
+.btn_blue {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  background-color: #427ed5;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 .nav_top, .nav_sub {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+}
+
+.nav_container {
+  box-shadow: 0 0 1px #333333;
 }
 
 .nav_top {
@@ -38,7 +55,6 @@ button {
 
 .nav_sub {
   height: 100px;
-  background-color: lightblue;
 }
 
 .social ul li {
@@ -56,13 +72,13 @@ button {
   color: #64686c;
 }
 .account .btn_account {
+  display: inline-block;
   height: 100%;
   border: none;
   font-size: 16px;
-  font-weight: 300;
   color: #64686c;
-  border-right: 1px solid #a0a5a5;
-  border-left: 1px solid #a0a5a5;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
   margin-left: 20px;
   padding: 0 10px;
   background-color: #fff;
@@ -77,7 +93,7 @@ button {
   border: none;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   padding: 0 40px;
   background-color: #fafafa;
   cursor: pointer;
@@ -90,5 +106,41 @@ button {
 
 .btn_account:hover {
   background-color: #fafafa;
+  cursor: pointer;
+}
+
+div.logo {
+  width: 150px;
+}
+div.logo img {
+  width: 100%;
+}
+
+.nav_menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.nav_menu ul li a {
+  text-decoration: none;
+  color: #2a2f33;
+  font-weight: 300;
+}
+.nav_menu ul li i {
+  font-size: 9px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+.nav_menu ul li a:hover, .nav_menu ul li a:focus {
+  color: #427ed5;
+  border-top: 3px solid #427ed5;
+  padding-top: 37px;
+  height: 100%;
+}
+
+i.search {
+  font-size: 12px;
+  margin-left: 30px;
   cursor: pointer;
 }

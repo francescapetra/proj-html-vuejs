@@ -1,17 +1,16 @@
 .btn{
   display: inline-block;
   padding: 13px 30px;
-  border-radius: 30px;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
 
 }.btn_blue{
   font-size: $font_12;
   color: $whi;
   background-color: $blue_sky;
-
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 .btn_blue:hover{
   opacity: 0.9;
@@ -24,7 +23,17 @@
   background-color: transparent;
   background: rgba(0,0,0,0.1);
   margin-top: 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 .btn_hero:hover{
   opacity: 0.7;
+}
+.genre{
+  border: 1px solid lightgray;
+  padding: 13px 40px;
+  color:$shark;
+}
+.genre:focus{
+  background-color: $whi;
 }

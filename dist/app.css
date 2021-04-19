@@ -43,27 +43,29 @@ h2 {
   vertical-align: middle;
   padding-bottom: 20px;
   margin: 0 25px;
+  color: #2a2f33;
 }
 
 .sub_title {
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 18px;
+  color: #2a2f33;
 }
 
 .btn {
   display: inline-block;
   padding: 13px 30px;
-  border-radius: 30px;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  text-transform: uppercase;
 }
 
 .btn_blue {
   font-size: 12px;
   color: #fff;
   background-color: #427ed5;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 
 .btn_blue:hover {
@@ -78,10 +80,22 @@ h2 {
   background-color: transparent;
   background: rgba(0, 0, 0, 0.1);
   margin-top: 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
 }
 
 .btn_hero:hover {
   opacity: 0.7;
+}
+
+.genre {
+  border: 1px solid lightgray;
+  padding: 13px 40px;
+  color: #2a2f33;
+}
+
+.genre:focus {
+  background-color: #fff;
 }
 
 .nav_top, .nav_sub {
@@ -223,6 +237,19 @@ i.search {
 hr {
   width: 30%;
   display: inline-block;
-  vertical-align: middle;
   margin-bottom: 10px;
+}
+
+.btn_genre {
+  padding: 40px 0;
+}
+
+.featured_products {
+  display: flex;
+  align-items: center;
+}
+
+.img_product {
+  height: 360px;
+  width: 230px;
 }

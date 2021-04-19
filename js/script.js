@@ -33,22 +33,37 @@ var app = new Vue(
       ],
       menuListNav:[
         {
-          link: "Home"
+          link: "Home",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
         },
         {
-        link: "Shop"
+        link: "Shop",
+        icon: 'chevron-down',
+        family: 'fas ',
+        prefix: 'fa-',
         },
         {
-          link: "Products"
+          link: "Products",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
         },
         {
-          link: "Categories"
+          link: "Categories",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
         },
         {
           link: "News"
         },
         {
-          link: "Elements"
+          link: "Elements",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
         },
       ],
 

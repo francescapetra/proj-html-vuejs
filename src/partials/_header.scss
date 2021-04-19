@@ -37,6 +37,8 @@ header{
   font-weight: 400;
   color: $t_gray;
   .shopping{
+    text-decoration: none;
+    color: $t_gray;
   }
   .btn_account{
     display: inline-block;

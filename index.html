@@ -21,11 +21,11 @@
           <nav class="nav_top container_small">
             <div class="social">
               <ul v-for="social in iconsSocial">
-                <li><i :class="social.family + social.prefix + social.name"></i></li>
+                <li><a href="#"><i :class="social.family + social.prefix + social.name"></i></a></li>
               </ul>
             </div>
             <div v-for="menu in shoppingNav" class="account">
-              <p class="shopping">{{menu.name}}</p>
+              <a class="shopping" href="#">{{menu.name}}</a>
               <button class="btn_account" type="button" name="button">{{menu.nameBtn}}<i class="fas fa-chevron-down"></i></button>
               <button class="btn_cart" type="button" name="button"><i class="fas fa-shopping-cart"></i>{{menu.nameBtnCart}}<i class="fas fa-chevron-down"></i></button>
             </div>
@@ -37,7 +37,7 @@
             </div>
             <div class="nav_menu">
               <ul>
-                <li v-for="link in menuListNav"><a href="#">{{link.link}}<i class="fas fa-chevron-down"></i> </a></li>
+                <li v-for="link in menuListNav"><a href="#">{{link.link}}<i :class="link.family + link.prefix + link.icon"></i> </a></li>
               </ul>
               <button class="btn_blue" type="button" name="button">shop now!</button>
               <i class="search fas fa-search"></i>
@@ -48,6 +48,10 @@
         <!-- top nav -->
 
       </header>
+      <!-- hero -->
+      <div class="hero container">
+
+      </div>
 
 
     </div>

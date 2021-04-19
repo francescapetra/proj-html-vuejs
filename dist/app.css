@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: lightgreen;
@@ -9,5 +15,38 @@ body {
 
 .container_small {
   margin: auto;
-  width: 75%;
+  width: 70%;
+}
+
+.container_small {
+  background-color: pink;
+}
+
+.nav_top, .nav_sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav_top {
+  height: 50px;
+  background-color: lightgray;
+}
+
+.social, .account, .logo, .nav_menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav_sub {
+  height: 100px;
+  background-color: lightblue;
+}
+
+.social ul li {
+  list-style: none;
+}
+.social ul li i {
+  color: #64686c;
+  font-size: 14px;
 }

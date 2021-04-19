@@ -1,0 +1,31 @@
+.container_small{
+  background-color: pink;
+}
+header{
+
+}
+.nav_top, .nav_sub{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.nav_top{
+  height: 50px;
+  background-color: lightgray;
+}
+.social, .account, .logo, .nav_menu{
+  @include display_flex;
+}
+.nav_sub{
+  height: 100px;
+  background-color: lightblue;
+}
+.social{
+  ul li{
+    list-style: none;
+    i{
+      color: $t_gray;
+      font-size: $font_14;
+    }
+  }
+}

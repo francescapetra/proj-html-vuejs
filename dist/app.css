@@ -36,6 +36,20 @@ h1 {
   padding-bottom: 20px;
 }
 
+h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 20px;
+  margin: 0 25px;
+}
+
+.sub_title {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 30px;
@@ -198,4 +212,17 @@ i.search {
 }
 .hero .container_small {
   text-align: center;
+}
+
+.featured {
+  padding: 100px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+hr {
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
 }

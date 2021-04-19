@@ -39,10 +39,10 @@ var app = new Vue(
           prefix: 'fa-',
         },
         {
-        link: "Shop",
-        icon: 'chevron-down',
-        family: 'fas ',
-        prefix: 'fa-',
+          link: "Shop",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
         },
         {
           link: "Products",

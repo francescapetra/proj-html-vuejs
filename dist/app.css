@@ -344,15 +344,15 @@ hr {
 }
 
 .img_season_winter {
-  background-image: url("../../img/winter_collection_bg.jpg");
+  background-image: url("../img/winter_collection_bg.jpg");
 }
 
 .img_season_spring {
-  background-image: url("../../img/spring_collection_bg.jpg");
+  background-image: url("../img/spring_collection_bg.jpg");
 }
 
 .img_season_autumn {
-  background-image: url("../../img/autumn_collection_bg.jpg");
+  background-image: url("../img/autumn_collection_bg.jpg");
 }
 
 .season_content {
@@ -387,12 +387,15 @@ hr {
 
 .promo {
   height: 500px;
-  background-image: url("../../img/bkgd_confetti-compressor.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px 0;
   color: #fff;
+}
+
+.promo_bg {
+  background-image: url("../img/bkgd_confetti-compressor.jpg");
 }
 
 .img_promo {
@@ -412,14 +415,18 @@ hr {
 }
 
 ._box1 {
-  background-image: url("../../img/promo_box_1_bg.jpg");
+  background-image: url("../img/promo_box_1_bg.jpg");
 }
 
 ._box2 {
-  background-image: url("../../img/promo_box_2_bg.jpg");
+  background-image: url("../img/promo_box_2_bg.jpg");
 }
 
 .new_product {
   height: 350px;
   width: 500px;
+}
+
+.testimonial_bg {
+  background-image: url("../img/testimonials_home_1_bg.jpg");
 }

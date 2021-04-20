@@ -1,5 +1,7 @@
-.featured{
+section{
   padding: 100px 0;
+}
+.featured{
   text-align: center;
   vertical-align: middle;
 }
@@ -44,4 +46,33 @@ margin-bottom: 10px;
 }
 .content_product{
 text-align: left;
+}
+.seasons{
+  @include display_flex;
+  vertical-align: middle;
+}
+.img_season_winter,
+.img_season_spring,
+.img_season_autumn{
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include display_flex;
+  justify-content: center;
+}
+.img_season_winter{
+  background-image: url("../../img/winter_collection_bg.jpg");
+}
+.img_season_spring{
+  background-image: url("../../img/spring_collection_bg.jpg");
+}
+.img_season_autumn{
+  background-image: url("../../img/autumn_collection_bg.jpg");
+}
+.season_content{
+  text-align: center;
+  color: $whi;
+  align-self:flex-end;
+  padding-bottom: 55px;
 }

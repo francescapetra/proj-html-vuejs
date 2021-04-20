@@ -288,7 +288,8 @@ section {
 
 section.promo_off,
 section.best_seller,
-section.new_arrivals {
+section.new_arrivals,
+section.testimonial {
   padding-top: 0;
 }
 
@@ -386,7 +387,7 @@ hr {
 }
 
 .promo {
-  height: 500px;
+  height: 550px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -402,7 +403,7 @@ hr {
   display: flex;
   align-items: center;
   padding: 0 50px;
-  height: 350px;
+  height: 400px;
   width: 550px;
   margin-right: 40px;
   background-position: center;
@@ -423,10 +424,24 @@ hr {
 }
 
 .new_product {
-  height: 350px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
+}
+.new_product img {
+  height: 100%;
 }
 
 .testimonial_bg {
   background-image: url("../img/testimonials_home_1_bg.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial_img {
+  width: 80px;
+  margin-top: 40px;
+}
+.testimonial_img img {
+  width: 100%;
 }

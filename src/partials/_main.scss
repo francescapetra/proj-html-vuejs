@@ -4,7 +4,8 @@ section{
 section.promo_off,
 section.best_seller,
 section.new_arrivals,
-section.testimonial{
+section.testimonial,
+section.blog{
   padding-top: 0;
 }
 .featured{
@@ -177,4 +178,27 @@ text-align: left;
     font-size: $font_11;
     margin-right: 3px;
   }
+}
+.img_blog{
+  height: 250px;
+  width: 360px;
+  margin: 0 20px;
+  justify-content: space-between;
+  img{
+  width: 100%;
+  }
+}
+.p_date{
+  font-size: $font_12;
+  padding: 5px 0;
+}
+.p_blog{
+  font-size: $font_14;
+  font-weight: 00;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+.rated_break{
+  border-top: 1px solid gray;
+  width: 95%;
 }

@@ -264,6 +264,14 @@ section.subscribe {
   padding: 0 40px;
 }
 
+.main_footer {
+  background-color: #2b2e32;
+}
+
+.sub_footer {
+  background-color: #1d1f22;
+}
+
 .nav_top, .nav_sub {
   display: flex;
   justify-content: space-between;
@@ -433,14 +441,74 @@ hr {
 
 .img_product {
   height: 360px;
-  width: 230px;
+  width: 290px;
+  position: relative;
 }
 .img_product img {
   width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img_product_best {
+  position: relative;
+}
+
+div.make_over:hover .overlay {
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease-in;
+  background: #f288b7;
+  background: linear-gradient(360deg, #f288b7 3%, #99a5ee 98%);
+  cursor: pointer;
+}
+.overlay i {
+  font-size: 14px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.text,
+.text_list {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+}
+
+.text_list {
+  padding-top: 60px;
 }
 
 .content_product {
   text-align: left;
+}
+
+.img_product_best {
+  height: 260px;
+  width: 220px;
+  position: relative;
+}
+.img_product_best img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .seasons {
@@ -489,7 +557,7 @@ hr {
   padding-top: 50px;
   width: 100%;
 }
-.carousel i {
+.carousel i.chevron {
   vertical-align: middle;
   color: #fff;
   font-size: 9px;

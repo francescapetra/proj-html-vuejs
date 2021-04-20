@@ -2,7 +2,8 @@ section{
   padding: 100px 0;
 }
 section.promo_off,
-section.best_seller{
+section.best_seller,
+section.new_arrivals{
   padding-top: 0;
 }
 .featured{
@@ -86,6 +87,7 @@ text-align: left;
 .carousel{
   vertical-align: middle;
   padding-top: 50px;
+  width: 100%;
   i{
     vertical-align: middle;
     color: $whi;
@@ -128,4 +130,8 @@ text-align: left;
 }
 ._box2{
   background-image: url("../../img/promo_box_2_bg.jpg");
+}
+.new_product{
+  height: 350px;
+  width: 500px;
 }

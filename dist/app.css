@@ -26,9 +26,38 @@ button {
   justify-content: center;
 }
 
+.flexstart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexspace {
+  display: flex;
+  justify-content: space-between;
+}
+
 .center {
   margin: auto;
   text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.linetr {
+  text-decoration: line-through;
+  display: inline-block;
+}
+
+.inline_bold {
+  display: inline-block;
+  font-weight: bold;
 }
 
 h1 {
@@ -70,7 +99,7 @@ h5 {
 }
 
 .p_product {
-  font-size: 11px;
+  font-size: 12px;
   padding-bottom: 7px;
 }
 
@@ -104,6 +133,40 @@ h3 {
   padding: 10px 0;
   max-width: 70%;
   line-height: 2;
+}
+
+.p_name {
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.p_date {
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.p_blog {
+  font-size: 14px;
+  font-weight: 0;
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0 20px 0;
+  letter-spacing: 2px;
+}
+
+.price_rate {
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 5px;
+  padding: 10px 0;
 }
 
 .btn {
@@ -462,13 +525,6 @@ hr {
   letter-spacing: 1px;
 }
 
-.p_name {
-  font-weight: bold;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding-top: 10px;
-}
-
 .bullet {
   padding-top: 25px;
 }
@@ -487,19 +543,37 @@ hr {
   width: 100%;
 }
 
-.p_date {
-  font-size: 12px;
-  padding: 5px 0;
-}
-
-.p_blog {
-  font-size: 14px;
-  font-weight: 0;
-  padding: 10px 0;
-  line-height: 1.5;
-}
-
 .rated_break {
   border-top: 1px solid gray;
-  width: 95%;
+  width: 70%;
+}
+
+.card {
+  padding: 20px 0;
+  display: block;
+  background-color: pink;
+  border-bottom: 1px solid lightgray;
+}
+.card a {
+  text-decoration: none;
+  color: #2a2f33;
+  vertical-align: top;
+}
+
+.img_rated {
+  vertical-align: top;
+  height: 80px;
+  width: 70px;
+  margin: 0 30px;
+  display: inline-block;
+}
+.img_rated img {
+  width: 100%;
+}
+
+.star_rate {
+  padding-top: 10px;
+}
+.star_rate i {
+  color: #427ed5;
 }

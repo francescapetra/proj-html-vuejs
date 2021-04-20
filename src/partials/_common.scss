@@ -25,7 +25,30 @@ button{
   display: flex;
   justify-content: center;
 }
+.flexstart{
+  display: flex;
+  justify-content: flex-start;
+}
+.flexspace{
+  display: flex;
+  justify-content: space-between;
+}
 .center{
   margin: auto;
   text-align: center;
+}
+.left{
+  text-align: left;
+}
+.underline{
+  text-decoration: underline;
+  display: inline-block;
+}
+.linetr{
+  text-decoration: line-through;
+  display: inline-block;
+}
+.inline_bold{
+  display: inline-block;
+  font-weight: bold;
 }

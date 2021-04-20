@@ -166,12 +166,6 @@ text-align: left;
     letter-spacing: 1px;
   }
 }
-.p_name{
-  font-weight: bold;
-  display: inline-block;
-  letter-spacing: 1px;
-  padding-top:10px;
-}
 .bullet{
   padding-top: 25px;
   .circle{
@@ -188,17 +182,34 @@ text-align: left;
   width: 100%;
   }
 }
-.p_date{
-  font-size: $font_12;
-  padding: 5px 0;
-}
-.p_blog{
-  font-size: $font_14;
-  font-weight: 00;
-  padding: 10px 0;
-  line-height: 1.5;
-}
 .rated_break{
   border-top: 1px solid gray;
-  width: 95%;
+  width: 70%;
+}
+.card{
+  padding: 20px 0;
+  display: block;
+  background-color: pink;
+  border-bottom: 1px solid lightgray;
+  a{
+    text-decoration: none;
+    color: $shark;
+    vertical-align: top;
+  }
+}
+.img_rated{
+  vertical-align: top;
+  height: 80px;
+  width: 70px;
+  margin: 0 30px;
+  display: inline-block;
+  img{
+    width: 100%;
+  }
+}
+.star_rate{
+  padding-top: 10px;
+  i{
+    color: $blue_sky;
+  }
 }

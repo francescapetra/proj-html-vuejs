@@ -366,6 +366,10 @@ section.blog {
   padding-top: 0;
 }
 
+section.logo_brand {
+  padding: 50px 0;
+}
+
 .featured {
   text-align: center;
   vertical-align: middle;
@@ -583,4 +587,25 @@ hr {
 
 .star_rate i {
   color: #427ed5;
+}
+
+.logo_brand {
+  background-color: #f6f6f6;
+}
+.logo_brand h6 {
+  color: #6b6a6b;
+}
+
+.container_logos {
+  width: 50%;
+  justify-content: space-between;
+}
+
+.logo_in_brand {
+  height: 120px;
+  width: 150px;
+  margin-top: 20px;
+}
+.logo_in_brand img {
+  width: 100%;
 }

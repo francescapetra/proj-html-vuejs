@@ -1,0 +1,28 @@
+section.subscribe{
+  background-color: $sup_foot;
+}
+.mail{
+  background-color: $main_foot;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  color: gray;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 30px;
+  .mail_up{
+    font-size: $font_30;
+  }
+}
+.mail_form{
+  border-radius: 30px;
+  padding: 0 30px;
+  width: 100%;
+  margin-right: 30px;
+  outline: none;
+}
+.send{
+  padding: 0 40px;
+}

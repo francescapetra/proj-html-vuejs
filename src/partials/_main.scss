@@ -154,3 +154,27 @@ text-align: left;
     width: 100%;
   }
 }
+.testimonial_paragraph{
+  p.p_testimonial{
+    max-width: 70%;
+    margin: auto;
+    line-height: 2;
+    padding: 15px 0;
+    font-style: italic;
+    font-size: $font_18;
+    letter-spacing: 1px;
+  }
+}
+.p_name{
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 1px;
+  padding-top:10px;
+}
+.bullet{
+  padding-top: 25px;
+  .circle{
+    font-size: $font_11;
+    margin-right: 3px;
+  }
+}

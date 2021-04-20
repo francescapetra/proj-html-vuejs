@@ -169,6 +169,10 @@ h6 {
   padding: 10px 0;
 }
 
+p.by {
+  margin-top: 5px;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 30px;
@@ -543,21 +547,27 @@ hr {
   width: 100%;
 }
 
-.rated_break {
+.break {
   border-top: 1px solid gray;
+  width: 95%;
+}
+
+.rated_break {
   width: 70%;
 }
 
 .card {
   padding: 20px 0;
   display: block;
-  background-color: pink;
   border-bottom: 1px solid lightgray;
+  margin-right: 15px;
 }
 .card a {
   text-decoration: none;
   color: #2a2f33;
   vertical-align: top;
+  padding-bottom: 5px;
+  display: inline-block;
 }
 
 .img_rated {
@@ -571,9 +581,6 @@ hr {
   width: 100%;
 }
 
-.star_rate {
-  padding-top: 10px;
-}
 .star_rate i {
   color: #427ed5;
 }

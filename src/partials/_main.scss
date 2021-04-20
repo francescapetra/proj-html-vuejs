@@ -182,19 +182,24 @@ text-align: left;
   width: 100%;
   }
 }
-.rated_break{
+.break{
   border-top: 1px solid gray;
+  width: 95%;
+}
+.rated_break{
   width: 70%;
 }
 .card{
   padding: 20px 0;
   display: block;
-  background-color: pink;
   border-bottom: 1px solid lightgray;
+  margin-right: 15px;
   a{
     text-decoration: none;
     color: $shark;
     vertical-align: top;
+    padding-bottom: 5px;
+    display: inline-block;
   }
 }
 .img_rated{
@@ -208,7 +213,6 @@ text-align: left;
   }
 }
 .star_rate{
-  padding-top: 10px;
   i{
     color: $blue_sky;
   }

@@ -21,6 +21,11 @@ button {
   outline: none;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   color: #fff;
   font-size: 78px;
@@ -275,6 +280,10 @@ section {
   padding: 100px 0;
 }
 
+section.promo_off {
+  padding-top: 0;
+}
+
 .featured {
   text-align: center;
   vertical-align: middle;
@@ -361,7 +370,27 @@ hr {
   background-color: lightgray;
   padding: 20px 10px;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 .carousel i:hover {
   opacity: 0.7;
+}
+
+.promo {
+  height: 500px;
+  background-image: url("../../img/bkgd_confetti-compressor.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.img_promo {
+  height: 350px;
+  width: 550px;
+  margin-right: 40px;
+}
+.img_promo img {
+  width: 100%;
+  height: 100%;
 }

@@ -50,6 +50,7 @@ h2 {
   padding: 20px 0;
   font-size: 18px;
   color: #2a2f33;
+  text-align: center;
 }
 
 h5 {
@@ -342,4 +343,25 @@ hr {
   color: #fff;
   align-self: flex-end;
   padding-bottom: 55px;
+}
+
+.best_seller {
+  vertical-align: middle;
+}
+
+.carousel {
+  vertical-align: middle;
+  padding-top: 50px;
+}
+.carousel i {
+  vertical-align: middle;
+  color: #fff;
+  font-size: 9px;
+  display: inline-block;
+  background-color: lightgray;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+.carousel i:hover {
+  opacity: 0.7;
 }

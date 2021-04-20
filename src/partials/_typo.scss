@@ -25,3 +25,23 @@ padding: 20px 0;
 font-size: $font_18;
 color:$shark;
 }
+h5{
+  padding: 7px 0;
+  font-weight: bold;
+  font-size: $font_14;
+}
+.p_product{
+  font-size: $font_11;
+  padding-bottom: 7px;
+  }
+.p_price{
+  color: $blue_sky;
+  font-size: $font_14;
+  vertical-align: middle;
+  span{
+    font-size: $font_9;
+    text-decoration:line-through;
+    vertical-align: middle;
+    margin-right: 3px;
+  }
+}

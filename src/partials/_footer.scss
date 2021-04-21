@@ -60,13 +60,16 @@ p.address{
   color: $whi;
 }
 .card_footer{
-  padding: 5px 0;
+  padding: 8px 0;
   color:$whi;
 }
 a.footer_link{
   color: $whi;
-  font-size: $font_14;
-  padding: 5px 0;
+  font-size: $font_16;
+  padding: 10px 0;
+}
+.star_footer{
+  padding: 3px 2px 3px 0;
 }
 a.link_tag{
 vertical-align: sub;

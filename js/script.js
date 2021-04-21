@@ -129,7 +129,7 @@ var app = new Vue(
         "Warm",
         "White",
         "Winter",
-      ],
+        ],
       }
     },
 );

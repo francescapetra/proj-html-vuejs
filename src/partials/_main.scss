@@ -79,27 +79,54 @@ div.make_over:hover .overlay{
   background: linear-gradient(360deg, rgba(242,136,183,1) 3%, rgba(153,165,238,1) 98%);
   cursor: pointer;
   i.fa-shopping-cart,
-  i.fa-list{
+  i.fa-list,
+  p.product_type{
     font-size: $font_14;
     display: inline-block;
     padding-right: 10px;
     color: $whi;
   }
+  p.product_type{
+    font-size: $font_18;
+  }
 }
 .text,
-.text_list {
+.text_list,
+.product_type,
+.product_genre,
+.product_cost {
   color: white;
-  font-size: 50px;
   position: absolute;
-  top: 40%;
-  left: 50%;
   background-color: transparent;
-  transform: translate(-50%, -50%);
   text-align: center;
   opacity: 1;
 }
+.text{
+  top: 90%;
+  left: 55%;
+}
 .text_list{
-padding-top: 60px;
+  top: 90%;
+  left: 10%;
+}
+.product_type{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 0;
+  display: block;
+}
+.product_genre{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 47%;
+  font-size: $font_14;
+}
+.product_cost{
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 45%;
+  font-size: $font_30;
 }
 .content_product{
 text-align: left;
@@ -308,17 +335,6 @@ text-align: left;
   width: 120px;
   padding-top: 20px;
   img{
-    width: 100%;
-  }
-}
-a.wpress:hover{
-  color: $blue_sky;
-}
-.payment{
-  width: 350px;
-  height: 50px;
-  margin-top: 10px;
-  img.pay{
     width: 100%;
   }
 }

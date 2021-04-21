@@ -98,3 +98,14 @@ padding: 0 10px;
 p.copyright{
   word-spacing: 2px;
 }
+a.wpress:hover{
+  color: $blue_sky;
+}
+.payment{
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
+  img.pay{
+    width: 100%;
+  }
+}

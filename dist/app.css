@@ -381,6 +381,19 @@ p.copyright {
   word-spacing: 2px;
 }
 
+a.wpress:hover {
+  color: #427ed5;
+}
+
+.payment {
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
+}
+.payment img.pay {
+  width: 100%;
+}
+
 .nav_top, .nav_sub {
   display: flex;
   justify-content: space-between;
@@ -589,28 +602,59 @@ div.make_over:hover .overlay {
   cursor: pointer;
 }
 .overlay i.fa-shopping-cart,
-.overlay i.fa-list {
+.overlay i.fa-list,
+.overlay p.product_type {
   font-size: 14px;
   display: inline-block;
   padding-right: 10px;
   color: #fff;
 }
+.overlay p.product_type {
+  font-size: 18px;
+}
 
 .text,
-.text_list {
+.text_list,
+.product_type,
+.product_genre,
+.product_cost {
   color: white;
-  font-size: 50px;
   position: absolute;
-  top: 40%;
-  left: 50%;
   background-color: transparent;
-  transform: translate(-50%, -50%);
   text-align: center;
   opacity: 1;
 }
 
+.text {
+  top: 90%;
+  left: 55%;
+}
+
 .text_list {
-  padding-top: 60px;
+  top: 90%;
+  left: 10%;
+}
+
+.product_type {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 0;
+  display: block;
+}
+
+.product_genre {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 47%;
+  font-size: 14px;
+}
+
+.product_cost {
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 45%;
+  font-size: 30px;
 }
 
 .content_product {
@@ -853,18 +897,5 @@ div.make_over:hover .overlay {
   padding-top: 20px;
 }
 .logo_in_brand img {
-  width: 100%;
-}
-
-a.wpress:hover {
-  color: #427ed5;
-}
-
-.payment {
-  width: 350px;
-  height: 50px;
-  margin-top: 10px;
-}
-.payment img.pay {
   width: 100%;
 }

@@ -77,10 +77,12 @@ div.make_over:hover .overlay{
   background: rgb(242,136,183);
   background: linear-gradient(360deg, rgba(242,136,183,1) 3%, rgba(153,165,238,1) 98%);
   cursor: pointer;
-  i{
+  i.fa-shopping-cart,
+  i.fa-list{
     font-size: $font_14;
     display: inline-block;
     padding-right: 10px;
+    color: $whi;
   }
 }
 .text,
@@ -102,7 +104,7 @@ padding-top: 60px;
 text-align: left;
 }
 .img_product_best{
-  height: 260px;
+  height: 270px;
   width: 220px;
   position: relative;
   img{
@@ -193,9 +195,12 @@ text-align: left;
   background-image: url("../img/promo_box_2_bg.jpg");
 }
 .new_product{
-  height: 100%;;
-  width: 100%;;
+  position: relative;
+  max-height: 500px;
+  max-width: 390px;
+  overflow: hidden;
   img{
+    width: 100%;
     height: 100%;
   }
 }
@@ -251,12 +256,15 @@ text-align: left;
   display: block;
   border-bottom: 1px solid lightgray;
   margin-right: 15px;
-  a{
+  a.link_rate{
     text-decoration: none;
     color: $shark;
     vertical-align: top;
     padding-bottom: 5px;
     display: inline-block;
+  }
+  a:hover{
+    color: $blue_sky;
   }
 }
 .img_rated{

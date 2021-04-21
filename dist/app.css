@@ -158,7 +158,7 @@ h6 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  padding: 20px 0 20px 0;
+  padding: 30px 0 30px 0;
   letter-spacing: 2px;
 }
 
@@ -302,6 +302,9 @@ section.subscribe {
   color: #64686c;
   font-size: 14px;
   margin-right: 20px;
+}
+.social ul li i:hover {
+  opacity: 0.7;
 }
 
 .account {
@@ -473,10 +476,12 @@ div.make_over:hover .overlay {
   background: linear-gradient(360deg, #f288b7 3%, #99a5ee 98%);
   cursor: pointer;
 }
-.overlay i {
+.overlay i.fa-shopping-cart,
+.overlay i.fa-list {
   font-size: 14px;
   display: inline-block;
   padding-right: 10px;
+  color: #fff;
 }
 
 .text,
@@ -501,7 +506,7 @@ div.make_over:hover .overlay {
 }
 
 .img_product_best {
-  height: 260px;
+  height: 270px;
   width: 220px;
   position: relative;
 }
@@ -609,10 +614,13 @@ div.make_over:hover .overlay {
 }
 
 .new_product {
-  height: 100%;
-  width: 100%;
+  position: relative;
+  max-height: 500px;
+  max-width: 390px;
+  overflow: hidden;
 }
 .new_product img {
+  width: 100%;
   height: 100%;
 }
 
@@ -674,12 +682,15 @@ div.make_over:hover .overlay {
   border-bottom: 1px solid lightgray;
   margin-right: 15px;
 }
-.card a {
+.card a.link_rate {
   text-decoration: none;
   color: #2a2f33;
   vertical-align: top;
   padding-bottom: 5px;
   display: inline-block;
+}
+.card a:hover {
+  color: #427ed5;
 }
 
 .img_rated {

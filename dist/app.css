@@ -50,6 +50,10 @@ button {
   display: inline-block;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .linetr {
   text-decoration: line-through;
   display: inline-block;
@@ -78,6 +82,10 @@ button {
 
 .yellow {
   background-color: yellow;
+}
+
+.bkc {
+  color: black;
 }
 
 h1 {
@@ -674,6 +682,16 @@ div.make_over:hover .overlay {
   display: block;
 }
 
+.product_type_buy {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
 .product_genre {
   transform: translate(-50%, -50%);
   top: 50%;
@@ -686,6 +704,15 @@ div.make_over:hover .overlay {
   top: 60%;
   left: 45%;
   font-size: 30px;
+}
+
+.product_buy {
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  font-size: 40px;
+  color: lime;
 }
 
 .content_product {
@@ -760,7 +787,7 @@ div.make_over:hover .overlay {
   margin-bottom: 30px;
 }
 .carousel i:hover {
-  opacity: 0.7;
+  background-color: #64686c;
 }
 
 .promo {
@@ -849,6 +876,7 @@ div.make_over:hover .overlay {
   width: 360px;
   margin: 0 20px;
   justify-content: space-between;
+  cursor: pointer;
 }
 .img_blog img {
   width: 100%;
@@ -929,4 +957,13 @@ div.make_over:hover .overlay {
 }
 .logo_in_brand img {
   width: 100%;
+}
+
+.isActive {
+  display: block;
+}
+
+.active,
+.pippo {
+  display: none;
 }

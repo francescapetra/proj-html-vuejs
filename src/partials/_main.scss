@@ -65,6 +65,7 @@ div.make_over:hover .overlay{
   opacity: 0.8;
   overflow: hidden;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -116,6 +117,15 @@ div.make_over:hover .overlay{
   padding: 10px 0;
   display: block;
 }
+.product_type_buy{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: $font_22;
+  font-weight: bold;
+  color: $whi;
+}
 .product_genre{
   transform: translate(-50%, -50%);
   top: 50%;
@@ -127,6 +137,14 @@ div.make_over:hover .overlay{
   top: 60%;
   left: 45%;
   font-size: $font_30;
+}
+.product_buy{
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  position: absolute;
+  font-size: $font_40;
+  color: lime;
 }
 .content_product{
 text-align: left;
@@ -188,7 +206,7 @@ text-align: left;
     margin-bottom: 30px;
   }
   i:hover{
-    opacity: 0.7;
+    background-color: $t_gray;
   }
 }
 .promo{
@@ -268,6 +286,7 @@ text-align: left;
   width: 360px;
   margin: 0 20px;
   justify-content: space-between;
+  cursor: pointer;
   img{
   width: 100%;
   transition: 1s;
@@ -337,4 +356,11 @@ text-align: left;
   img{
     width: 100%;
   }
+}
+.isActive{
+  display:block;
+}
+.active,
+.pippo{
+  display: none;
 }

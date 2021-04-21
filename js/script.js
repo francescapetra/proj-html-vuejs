@@ -2,6 +2,17 @@ var app = new Vue(
   {
     el: "#root",
     data: {
+      contactIndex: 0,
+      // prova:[
+      //   {
+      //     img:"img/black_elegant_leather_jacket.jpg",
+      //   },
+      //   {
+      //     img: "img/black_leather_suit-400x520.jpg",
+      //   }
+      // ],
+
+      isActive: false,
       iconsSocial:[
         {
           name: 'facebook-f',
@@ -144,6 +155,9 @@ var app = new Vue(
           }
           this.showNavbar = currentScrollPosition < this.lastScrollPosition
           this.lastScrollPosition = currentScrollPosition
+        },
+        myFilter: function() {
+        this.isActive = !this.isActive;
         }
       },
       mounted () {

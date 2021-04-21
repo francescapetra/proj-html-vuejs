@@ -70,19 +70,23 @@
         <div class="featured_products">
           <div class="make_over">
             <div class="img_product">
-              <img src="img/black_elegant_leather_jacket.jpg" alt="">
+              <img src= "img/black_elegant_leather_jacket.jpg" alt="">
               <div class="overlay">
-                <div class="product_type_list">
+                <div :class="{active: isActive}" class=" product_type_list ">
                   <p class=" product_type">Elegant Leather Jacket</p>
                   <p class=" product_genre">Men Jackets </p>
                   <p class=" product_cost">$ 200</p>
                 </div>
-                <div class="text cart"><i class="fas fa-shopping-cart"> Add to cart</i></div>
+                <div :class="{active: !isActive}" class=" product_type_list ">
+                  <p class="product_type_buy uppercase">Added to cart</p>
+                  <i class="product_buy fas fa-check-circle"></i>
+                </div>
+                <div class="text cart"><i @click="myFilter(contactIndex)" class="fas fa-shopping-cart"> Add to cart</i></div>
                 <div class="text_list"><i class="fas fa-list"> Details</i></div>
               </div>
                 <div class="">
                   <div class="content_product">
-                    <h5>Black Leather Jacket</h5>
+                    <h5>Elegant Leather Jacket</h5>
                     <p class="p_product">Men, jackets, Jeans</p>
                     <p class="p_price"> <span>$295</span> $200 </p>
                   </div>
@@ -94,10 +98,14 @@
             <div class="img_product">
               <img src="img/black_leather_suit-400x520.jpg" alt="">
               <div class="overlay">
-                <div class="product_type_list">
+                <div :class="{active: isActive}" class=" product_type_list ">
                   <p class=" product_type">Leather Jacket</p>
                   <p class=" product_genre">Men Jackets </p>
                   <p class=" product_cost">$ 176</p>
+                </div>
+                <div :class="{active: !isActive}" class=" product_type_list ">
+                  <p class=" product_type_buy uppercase">Added to cart</p>
+                  <i class="product_buy fas fa-check-circle"></i>
                 </div>
                 <div class="text"><i class="fas fa-shopping-cart"> Add to cart</i></div>
                 <div class="text_list"><i class="fas fa-list"> Details</i></div>
@@ -110,7 +118,7 @@
             </div>
           </div>
 
-          <div class="make_over">
+          <div @click="myFilter()" class="make_over">
             <div class="img_product">
               <img src="img/blue_jacket_and_white_stripe_tee-400x520.jpg" alt="">
               <div class="overlay">
@@ -130,7 +138,7 @@
             </div>
           </div>
 
-          <div class="make_over">
+          <div @click="myFilter()" class="make_over">
             <div class="img_product">
               <img src="img/modern_black_leather_suit-400x520.jpg" alt="">
               <div class="overlay">

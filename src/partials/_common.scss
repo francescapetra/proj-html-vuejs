@@ -44,6 +44,9 @@ button{
   text-decoration: underline;
   display: inline-block;
 }
+.uppercase{
+  text-transform: uppercase;
+}
 .linetr{
   text-decoration: line-through;
   display: inline-block;
@@ -67,4 +70,7 @@ button{
 }
 .yellow{
   background-color: yellow;
+}
+.bkc{
+color: black;
 }

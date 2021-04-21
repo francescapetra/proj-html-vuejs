@@ -21,7 +21,7 @@
           <nav class="nav_top container_small">
             <div class="social">
               <ul v-for="social in iconsSocial">
-                <li><a href="#"><i :class="social.family + social.prefix + social.name"></i></a></li>
+                <li><a href="#"><i class="social_header" :class="social.family + social.prefix + social.name"></i></a></li>
               </ul>
             </div>
             <div v-for="menu in shoppingNav" class="account">
@@ -610,7 +610,33 @@
           </div>
         </div>
       </section>
-      <section class="main_footer"></section>
+      <section class="main_footer">
+        <div class="container_small  flexspace">
+
+          <div class="contacts ">
+            <div class="logo_footer">
+              <img src="img/classic_shop_logo_footer.png" alt="">
+            </div>
+            <div class="contacts_address">
+              <p class="address">12345 North Main Street,
+                New York, NY 555555
+                Phone: 1.800.555.6789
+                Email: info@company.com
+                Web: Theme-fusion.com</p>
+            </div>
+            <div class="social">
+              <ul v-for="social in iconsSocial">
+                <li><a href="#">
+                  <i class="social_footer" :class="social.family + social.prefix + social.name"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts yellow"></div>
+          <div class="contacts green"></div>
+          <div class="contacts yellow"></div>
+
+        </div>
+      </section>
       <section class="sub_footer"></section>
       </footer>
 

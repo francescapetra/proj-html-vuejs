@@ -60,6 +60,18 @@ button {
   font-weight: bold;
 }
 
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
 h1 {
   color: #fff;
   font-size: 78px;
@@ -272,6 +284,34 @@ section.subscribe {
   background-color: #1d1f22;
 }
 
+.logo_footer {
+  width: 150px;
+}
+.logo_footer img {
+  width: 100%;
+}
+
+.contacts {
+  width: 25%;
+}
+
+.contacts_address {
+  padding: 40px 0;
+}
+
+p.address {
+  max-width: 65%;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.social_footer {
+  color: #fff;
+}
+
 .nav_top, .nav_sub {
   display: flex;
   justify-content: space-between;
@@ -299,9 +339,11 @@ section.subscribe {
   list-style: none;
 }
 .social ul li i {
-  color: #64686c;
   font-size: 14px;
   margin-right: 20px;
+}
+.social ul li i.social_header {
+  color: #64686c;
 }
 .social ul li i:hover {
   opacity: 0.7;

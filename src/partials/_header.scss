@@ -20,15 +20,16 @@ header{
 }
 .nav_sub{
   height: 100px;
-
 }
 .social{
   ul li{
     list-style: none;
     i{
-      color: $t_gray;
       font-size: $font_14;
       margin-right: 20px;
+    }
+    i.social_header{
+    color: $t_gray;
     }
    i:hover{
     opacity: 0.7;
@@ -51,7 +52,6 @@ header{
     color: $t_gray;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
-
     margin-left: 20px;
     padding: 0 10px;
     background-color: #fff;

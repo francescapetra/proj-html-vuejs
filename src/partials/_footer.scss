@@ -32,3 +32,26 @@ section.subscribe{
 .sub_footer{
   background-color: $sub_foot
 }
+.logo_footer{
+  width: 150px;
+  img{
+    width: 100%;
+  }
+}
+.contacts{
+  width: 25%;
+}
+.contacts_address{
+  padding: 40px 0;
+}
+p.address{
+  max-width: 65%;
+  font-size: $font_12;
+  font-weight: bold;
+  color: $whi;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+.social_footer{
+  color: $whi;
+}

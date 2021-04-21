@@ -251,21 +251,27 @@ text-align: left;
 .rated_break{
   width: 70%;
 }
-.card{
-  padding: 30px 0;
+.card,
+.card_footer{
   display: block;
   border-bottom: 1px solid lightgray;
   margin-right: 15px;
-  a.link_rate{
+  a.link_rate,
+  a.rate_footer{
     text-decoration: none;
-    color: $shark;
     vertical-align: top;
     padding-bottom: 5px;
     display: inline-block;
   }
+  a.link_rate{
+    color: $shark;
+  }
   a:hover{
     color: $blue_sky;
   }
+}
+.card{
+  padding: 30px 0;
 }
 .img_rated{
   vertical-align: top;

@@ -170,8 +170,16 @@ h6 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
-  padding: 30px 0 30px 0;
   letter-spacing: 2px;
+}
+
+h6.table_rate {
+  padding: 30px 0;
+}
+
+h6.rated_title_footer {
+  color: #fff;
+  padding-bottom: 45px;
 }
 
 .price_rate {
@@ -300,7 +308,7 @@ section.subscribe {
 }
 
 p.address {
-  max-width: 65%;
+  max-width: 50%;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -309,6 +317,15 @@ p.address {
 }
 
 .social_footer {
+  color: #fff;
+}
+
+.card_footer {
+  padding: 5px 0;
+  color: #fff;
+}
+
+a.rate_footer {
   color: #fff;
 }
 
@@ -718,21 +735,32 @@ div.make_over:hover .overlay {
   width: 70%;
 }
 
-.card {
-  padding: 30px 0;
+.card,
+.card_footer {
   display: block;
   border-bottom: 1px solid lightgray;
   margin-right: 15px;
 }
-.card a.link_rate {
+.card a.link_rate,
+.card a.rate_footer,
+.card_footer a.link_rate,
+.card_footer a.rate_footer {
   text-decoration: none;
-  color: #2a2f33;
   vertical-align: top;
   padding-bottom: 5px;
   display: inline-block;
 }
-.card a:hover {
+.card a.link_rate,
+.card_footer a.link_rate {
+  color: #2a2f33;
+}
+.card a:hover,
+.card_footer a:hover {
   color: #427ed5;
+}
+
+.card {
+  padding: 30px 0;
 }
 
 .img_rated {

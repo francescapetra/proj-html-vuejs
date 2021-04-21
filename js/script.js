@@ -66,6 +66,36 @@ var app = new Vue(
           prefix: 'fa-',
         },
       ],
+      ratedTitle: "top rated products",
+      ratedFooter:[
+        {
+          dressName: "Black Jacket",
+          iconStar: 'star',
+          family: 'fas ',
+          prefix: 'fa-',
+          firstPrice: "$180",
+          newPrice:"$125",
+          img: "img/black_leather_jacket-120x156.jpg"
+        },
+        {
+          dressName: "Black Leather Jacket",
+          iconStar: 'star',
+          family: 'fas ',
+          prefix: 'fa-',
+          firstPrice: "$235",
+          newPrice:"$200",
+          img: "img/black_elegant_leather_jacket-120x156.jpg"
+        },
+        {
+          dressName: "Hipster Black Top",
+          iconStar: 'star',
+          family: 'fas ',
+          prefix: 'fa-',
+          firstPrice: "$125",
+          newPrice:"$58",
+          img: "img/hipster_black_top-120x156.jpg"
+        },
+      ]
 
       }
     },

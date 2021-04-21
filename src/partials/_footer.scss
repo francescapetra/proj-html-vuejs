@@ -45,7 +45,7 @@ section.subscribe{
   padding: 40px 0;
 }
 p.address{
-  max-width: 65%;
+  max-width: 50%;
   font-size: $font_12;
   font-weight: bold;
   color: $whi;
@@ -53,5 +53,12 @@ p.address{
   line-height: 2;
 }
 .social_footer{
+  color: $whi;
+}
+.card_footer{
+  padding: 5px 0;
+  color:$whi;
+}
+a.rate_footer{
   color: $whi;
 }

@@ -357,7 +357,7 @@
             <div class="container_small">
 
               <div class="card  flex">
-                <h6 class="left">featured</h6>
+                <h6 class="left table_rate">featured</h6>
                 <div class="card_products flexspace">
                   <div class="left">
                     <a class="link_rate" href="#">Black Jacket</a>
@@ -405,7 +405,7 @@
             <div class="container_small">
 
               <div class="card flex">
-                <h6 class="left">on sale</h6>
+                <h6 class="left table_rate">on sale</h6>
                 <div class="card_products flexspace">
                   <div class="left">
                     <a class="link_rate" href="#">Black Leather</a>
@@ -453,7 +453,7 @@
             <div class="container_small">
 
               <div class="card container_xsmall flex">
-                <h6 class="left">top rated</h6>
+                <h6 class="left table_rate">top rated</h6>
                 <div class="card_products flexspace">
                   <div class="left">
                     <a class="link_rate" href="#">Leather Gloves</a>
@@ -611,7 +611,7 @@
         </div>
       </section>
       <section class="main_footer">
-        <div class="container_small  flexspace">
+        <div  class="container_small  flexspace">
 
           <div class="contacts ">
             <div class="logo_footer">
@@ -631,11 +631,29 @@
               </ul>
             </div>
           </div>
-          <div class="contacts yellow"></div>
-          <div class="contacts green"></div>
-          <div class="contacts yellow"></div>
+
+          <div class="contacts rated ">
+            <h6 class="left rated_title_footer">{{ratedTitle}}</h6>
+            <div v-for="element in ratedFooter" class="card_footer flex">
+              <div class="card_products flexspace">
+                <div class="left">
+                  <a class="rate_footer" href="#">{{element.dressName}}</a>
+                  <div class="star_rate">
+                    <i v-for="n in 5" :class=" element.family + element.prefix + element.iconStar"></i>
+                  </div>
+                  <p class="linetr price_rate"> {{element.firstPrice}}</p>
+                  <p class="underline">{{element.newPrice}}</p>
+                </div>
+                <div class="img_rated">
+                  <img :src="element.img" alt="">
+                </div>
+              </div>
+            </div>
 
         </div>
+        <div class="contacts green"></div>
+        <div class="contacts yellow"></div>
+
       </section>
       <section class="sub_footer"></section>
       </footer>

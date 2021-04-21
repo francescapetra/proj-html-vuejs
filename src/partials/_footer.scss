@@ -34,18 +34,23 @@ section.subscribe{
 }
 .logo_footer{
   width: 150px;
+  padding-top: 10px;
   img{
     width: 100%;
   }
 }
 .contacts{
   width: 25%;
+  padding: 10px 1px;
+}
+.address_in{
+  width: 20%;
 }
 .contacts_address{
   padding: 40px 0;
 }
 p.address{
-  max-width: 50%;
+  width: 65%;
   font-size: $font_12;
   font-weight: bold;
   color: $whi;
@@ -59,6 +64,10 @@ p.address{
   padding: 5px 0;
   color:$whi;
 }
-a.rate_footer{
+a.footer_link{
   color: $whi;
+}
+.list_footer{
+  padding: 5px 0 10px 0;
+    white-space: nowrap;
 }

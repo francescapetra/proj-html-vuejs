@@ -515,7 +515,7 @@
             <div class="container_small">
 
               <div class="card container_xsmall flex">
-                <h6 class="left">latest reviews</h6>
+                <h6 class="left table_rate">latest reviews</h6>
                 <div class="card_products flexspace">
                   <div class="left">
                     <a class="link_rate" href="#">Black Jacket</a>
@@ -613,7 +613,7 @@
       <section class="main_footer">
         <div  class="container_small  flexspace">
 
-          <div class="contacts ">
+          <div class="contacts address_in">
             <div class="logo_footer">
               <img src="img/classic_shop_logo_footer.png" alt="">
             </div>
@@ -637,7 +637,7 @@
             <div v-for="element in ratedFooter" class="card_footer flex">
               <div class="card_products flexspace">
                 <div class="left">
-                  <a class="rate_footer" href="#">{{element.dressName}}</a>
+                  <a class=" footer_link rate_footer" href="#">{{element.dressName}}</a>
                   <div class="star_rate">
                     <i v-for="n in 5" :class=" element.family + element.prefix + element.iconStar"></i>
                   </div>
@@ -645,13 +645,20 @@
                   <p class="underline">{{element.newPrice}}</p>
                 </div>
                 <div class="img_rated">
-                  <img :src="element.img" alt="">
+                  <img :src="element.img" alt="photo">
                 </div>
               </div>
             </div>
+          </div>
 
+        <div class="contacts post_link ">
+          <h6 class="left rated_title_footer">{{postTitle}}</h6>
+          <div v-for="post in recentPost" class="card_footer">
+            <ul class="list_footer list_none">
+              <li><a class=" footer_link text_none" href="#">> {{post}}</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="contacts green"></div>
         <div class="contacts yellow"></div>
 
       </section>

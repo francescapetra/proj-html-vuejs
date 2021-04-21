@@ -60,6 +60,14 @@ button {
   font-weight: bold;
 }
 
+.list_none {
+  list-style: none;
+}
+
+.text_none {
+  text-decoration: none;
+}
+
 .pink {
   background-color: pink;
 }
@@ -294,6 +302,7 @@ section.subscribe {
 
 .logo_footer {
   width: 150px;
+  padding-top: 10px;
 }
 .logo_footer img {
   width: 100%;
@@ -301,6 +310,11 @@ section.subscribe {
 
 .contacts {
   width: 25%;
+  padding: 10px 1px;
+}
+
+.address_in {
+  width: 20%;
 }
 
 .contacts_address {
@@ -308,7 +322,7 @@ section.subscribe {
 }
 
 p.address {
-  max-width: 50%;
+  width: 65%;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -325,8 +339,13 @@ p.address {
   color: #fff;
 }
 
-a.rate_footer {
+a.footer_link {
   color: #fff;
+}
+
+.list_footer {
+  padding: 5px 0 10px 0;
+  white-space: nowrap;
 }
 
 .nav_top, .nav_sub {

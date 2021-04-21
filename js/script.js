@@ -67,6 +67,7 @@ var app = new Vue(
         },
       ],
       ratedTitle: "top rated products",
+      postTitle: "recent post",
       ratedFooter:[
         {
           dressName: "Black Jacket",
@@ -95,8 +96,15 @@ var app = new Vue(
           newPrice:"$58",
           img: "img/hipster_black_top-120x156.jpg"
         },
-      ]
-
+      ],
+      recentPost:[
+        "Aenean lobortis sapien enim viverra",
+        "Duis ac massa semper maximus",
+        "Nunc fermint nulla eu justo sem id",
+        "Aliquam posuere magna eget nibh",
+        "Cras ac nulla ac consecte rutrum",
+        "Fusce mattis nunc ut aliquam",
+      ],
       }
     },
 );

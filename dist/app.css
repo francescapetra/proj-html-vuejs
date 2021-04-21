@@ -793,7 +793,7 @@ div.make_over:hover .overlay {
   cursor: pointer;
   margin-bottom: 30px;
 }
-.carousel i:hover {
+.carousel i.chevron:hover {
   background-color: #64686c;
 }
 

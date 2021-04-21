@@ -590,10 +590,17 @@ section.sub_footer {
   vertical-align: middle;
 }
 
-hr {
-  width: 30%;
+.divider::before, .divider::after {
+  content: "";
   display: inline-block;
-  margin-bottom: 10px;
+  height: 1px;
+  width: 100%;
+  max-width: 20%;
+  background-color: currentColor;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  color: #a0a5a5;
 }
 
 .btn_genre {
@@ -870,6 +877,13 @@ div.make_over:hover .overlay {
   font-size: 11px;
   margin-right: 3px;
 }
+.bullet .circle:hover {
+  cursor: pointer;
+}
+
+.blog {
+  padding-top: 20px;
+}
 
 .img_blog {
   height: 250px;
@@ -888,7 +902,7 @@ div.make_over:hover .overlay {
 }
 
 .break {
-  border-top: 1px solid gray;
+  border-top: 1px solid #a0a5a5;
   width: 95%;
 }
 
@@ -963,7 +977,6 @@ div.make_over:hover .overlay {
   display: block;
 }
 
-.active,
-.pippo {
+.active {
   display: none;
 }

@@ -8,7 +8,8 @@ section.testimonial,
 section.blog{
   padding-top: 0;
 }
-section.logo_brand{
+section.logo_brand,
+section.sub_footer{
   padding: 50px 0;
 }
 .featured{
@@ -306,6 +307,17 @@ text-align: left;
   width: 120px;
   padding-top: 20px;
   img{
+    width: 100%;
+  }
+}
+a.wpress:hover{
+  color: $blue_sky;
+}
+.payment{
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
+  img.pay{
     width: 100%;
   }
 }

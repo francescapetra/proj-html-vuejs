@@ -338,7 +338,8 @@ p.address {
   color: #fff;
 }
 
-a.footer_link {
+a.footer_link,
+p.copyright {
   color: #fff;
   font-size: 16px;
   padding: 10px 0;
@@ -374,6 +375,10 @@ a.link_tag {
 
 .tag_container:hover {
   background-color: #427ed5;
+}
+
+p.copyright {
+  word-spacing: 2px;
 }
 
 .nav_top, .nav_sub {
@@ -523,7 +528,8 @@ section.blog {
   padding-top: 0;
 }
 
-section.logo_brand {
+section.logo_brand,
+section.sub_footer {
   padding: 50px 0;
 }
 
@@ -847,5 +853,18 @@ div.make_over:hover .overlay {
   padding-top: 20px;
 }
 .logo_in_brand img {
+  width: 100%;
+}
+
+a.wpress:hover {
+  color: #427ed5;
+}
+
+.payment {
+  width: 350px;
+  height: 50px;
+  margin-top: 10px;
+}
+.payment img.pay {
   width: 100%;
 }

@@ -302,15 +302,14 @@ section.subscribe {
 
 .logo_footer {
   width: 150px;
-  padding-top: 10px;
 }
 .logo_footer img {
   width: 100%;
 }
 
 .contacts {
-  width: 25%;
-  padding: 10px 1px;
+  width: 23%;
+  padding: 10px 0;
 }
 
 .address_in {
@@ -356,7 +355,6 @@ a.link_tag {
 }
 
 .tags {
-  width: 95%;
   padding-top: 15px;
 }
 

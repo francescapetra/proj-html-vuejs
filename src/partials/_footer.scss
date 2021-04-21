@@ -22,6 +22,7 @@ section.subscribe{
   width: 100%;
   margin-right: 30px;
   outline: none;
+  border: none;
 }
 .send{
   padding: 0 40px;
@@ -97,6 +98,9 @@ padding: 0 10px;
 }
 p.copyright{
   word-spacing: 2px;
+}
+a.wpress{
+  color: $whi;
 }
 a.wpress:hover{
   color: $blue_sky;

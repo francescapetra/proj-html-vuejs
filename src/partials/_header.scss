@@ -2,7 +2,10 @@
   // background-color: pink;
 }
 header{
-
+position: fixed;
+top: 0;
+background-color: #fff;
+z-index: 10;
 }
 .nav_top, .nav_sub{
   display: flex;
@@ -14,6 +17,22 @@ header{
 }
 .nav_top{
   height: 50px;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
+}
+.navbar {
+  altezza: 60px;
+  larghezza: 100vw;
+  sfondo: hsl (200, 50%, 50%);
+  posizione: fissa;
+  box-shadow: 0 2px 15px rgba (71, 120, 120, 0,5);
+  trasformare: translate3d (0, 0, 0);
+  transizione: 0.1s tutto a disagio;
+}
+.navbar.navbar--hidden {
+  box-shadow: none;
+  display: none;
+  transform: translate3d(0, -100%, 0);
 }
 .social, .account, .logo, .nav_menu{
   @include display_flex;

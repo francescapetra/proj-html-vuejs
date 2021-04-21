@@ -17,23 +17,26 @@
     <div id="root">
 
       <header class="container">
-        <div class="container nav_container">
-          <nav class="nav_top container_small">
-            <div class="social">
-              <ul v-for="social in iconsSocial">
-                <li><a href="#"><i class="social_header" :class="social.family + social.prefix + social.name"></i></a></li>
-              </ul>
+        <div class="navbar":class="{ 'navbar--hidden': !showNavbar }">
+          <div class="navbar container nav_container">
+            <nav  class="nav_top container_small">
+              <div class="social">
+                <ul v-for="social in iconsSocial">
+                  <li><a href="#"><i class="social_header" :class="social.family + social.prefix + social.name"></i></a></li>
+                </ul>
+              </div>
+              <div v-for="menu in shoppingNav" class="account">
+                <a class="shopping" href="#">{{menu.name}}</a>
+                <button class="btn_account" type="button" name="button">{{menu.nameBtn}}<i class="fas fa-chevron-down"></i></button>
+                <button class="btn_cart" type="button" name="button"><i class="fas fa-shopping-cart"></i>{{menu.nameBtnCart}}<i class="fas fa-chevron-down"></i></button>
+              </div>
+            </nav>
             </div>
-            <div v-for="menu in shoppingNav" class="account">
-              <a class="shopping" href="#">{{menu.name}}</a>
-              <button class="btn_account" type="button" name="button">{{menu.nameBtn}}<i class="fas fa-chevron-down"></i></button>
-              <button class="btn_cart" type="button" name="button"><i class="fas fa-shopping-cart"></i>{{menu.nameBtnCart}}<i class="fas fa-chevron-down"></i></button>
-            </div>
-          </nav>
-          </div>
+        </div>
+
           <!-- sub nav -->
           <nav class="nav_sub container_small">
-            <div class="logo"><img src="img/logo.png" alt="logo">
+            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="nav_menu">
               <ul>
@@ -311,7 +314,7 @@
                 <div class="product_type_list">
                   <p class=" product_type">Skully Tee & Black Shorts</p>
                   <p class=" product_genre">Women </p>
-                  <p class=" product_cost">$ 90</p>
+                  <p class=" product_cost">$ 110</p>
                 </div>
                 <div class="text"><i class="fas fa-shopping-cart"> Add to cart</i></div>
                 <div class="text_list"><i class="fas fa-list"> Details</i></div>
@@ -690,7 +693,7 @@
                 New York, NY 555555
                 Phone: 1.800.555.6789
                 Email: info@company.com
-                Web: Theme-fusion.com</p>
+                Web: <a class="wpress text_none" href="#">Theme-fusion.com</a> </p>
             </div>
             <div class="social">
               <ul v-for="social in iconsSocial">

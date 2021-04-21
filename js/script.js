@@ -95,6 +95,8 @@ var app = new Vue(
           img: "img/hipster_black_top-120x156.jpg"
         },
       ],
+      showNavbar: true,
+      lastScrollPosition: 0,
       ratedTitle: "top rated products",
       postTitle: "recent post",
       tagTitle: "tags",
@@ -130,6 +132,25 @@ var app = new Vue(
         "White",
         "Winter",
         ],
+      },
+      methods:{
+        onScroll () {
+          const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+          if (currentScrollPosition < 0) {
+            return
+          }
+          if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
+            return
+          }
+          this.showNavbar = currentScrollPosition < this.lastScrollPosition
+          this.lastScrollPosition = currentScrollPosition
+        }
+      },
+      mounted () {
+        window.addEventListener('scroll', this.onScroll)
+      },
+      beforeDestroy () {
+        window.removeEventListener('scroll', this.onScroll)
       }
     },
 );

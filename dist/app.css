@@ -314,7 +314,7 @@ section.subscribe {
 }
 
 .address_in {
-  width: 20%;
+  width: 15%;
 }
 
 .contacts_address {
@@ -322,7 +322,7 @@ section.subscribe {
 }
 
 p.address {
-  width: 65%;
+  width: 90%;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
@@ -341,11 +341,37 @@ p.address {
 
 a.footer_link {
   color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+a.link_tag {
+  vertical-align: sub;
+  padding: 0 10px;
 }
 
 .list_footer {
-  padding: 5px 0 10px 0;
+  padding: 10px 0 10px 0;
   white-space: nowrap;
+}
+
+.tags {
+  width: 95%;
+  padding-top: 15px;
+}
+
+.tag_container {
+  vertical-align: sub;
+  padding-right: 5px;
+  height: 30px;
+  margin: 5px 5px 5px 0;
+  width: auto;
+  display: inline-block;
+  border: 1px solid #a0a5a5;
+}
+
+.tag_container:hover {
+  background-color: #427ed5;
 }
 
 .nav_top, .nav_sub {
@@ -794,6 +820,7 @@ div.make_over:hover .overlay {
 
 .star_rate i {
   color: #427ed5;
+  padding: 5px 0;
 }
 
 .logo_brand {

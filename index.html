@@ -651,15 +651,24 @@
             </div>
           </div>
 
-        <div class="contacts post_link ">
-          <h6 class="left rated_title_footer">{{postTitle}}</h6>
-          <div v-for="post in recentPost" class="card_footer">
-            <ul class="list_footer list_none">
-              <li><a class=" footer_link text_none" href="#">> {{post}}</a></li>
-            </ul>
+          <div class="contacts post_link ">
+            <h6 class="left rated_title_footer">{{postTitle}}</h6>
+            <div v-for="post in recentPost" class="card_footer">
+              <ul class="list_footer list_none">
+                <li><a class=" footer_link text_none" href="#">> {{post}}</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="contacts yellow"></div>
+
+          <div class="contacts">
+            <h6 class="left rated_title_footer">{{tagTitle}}</h6>
+            <div class="tags">
+              <div v-for="tag in tags" class="tag_container">
+                <a class="footer_link link_tag text_none" href="#">{{tag}}</a>
+              </div>
+            </div>
+          </div>
+
 
       </section>
       <section class="sub_footer"></section>

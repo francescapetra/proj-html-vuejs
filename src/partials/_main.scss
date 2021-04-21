@@ -259,14 +259,15 @@ text-align: left;
 .card,
 .card_footer{
   display: block;
-  border-bottom: 1px solid lightgray;
   margin-right: 15px;
+  border-bottom: 1px solid $gray;
   a.link_rate,
   a.rate_footer{
     text-decoration: none;
     vertical-align: top;
     padding-bottom: 5px;
     display: inline-block;
+
   }
   a.link_rate{
     color: $shark;

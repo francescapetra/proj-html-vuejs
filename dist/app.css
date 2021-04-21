@@ -796,8 +796,8 @@ div.make_over:hover .overlay {
 .card,
 .card_footer {
   display: block;
-  border-bottom: 1px solid lightgray;
   margin-right: 15px;
+  border-bottom: 1px solid #a0a5a5;
 }
 .card a.link_rate,
 .card a.rate_footer,

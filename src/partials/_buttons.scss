@@ -16,18 +16,19 @@
   opacity: 0.9;
 }
 .btn_hero{
+  padding: 17px 35px;
   color: $whi;
   font-size: $font_16;
   margin-right: 10px;
-  border: 3px solid $whi;
+  border: 2px solid $whi;
   background-color: transparent;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.2);
   margin-top: 10px;
   border-radius: 30px;
   text-transform: uppercase;
 }
 .btn_hero:hover{
-  opacity: 0.7;
+  background: rgba(0,0,0,0.4);
 }
 .btn_genre{
   padding: 40px 0;
@@ -42,6 +43,6 @@
   background-color: $whi;
 }
 .more{
-  padding: 10px 20px;
+  padding: 13px 25px;
   font-size:$font_12;
 }

@@ -19,14 +19,14 @@ section.sub_footer{
 .divider::before, .divider::after {
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 0.5px;
   width: 100%;
   max-width: 20%;
   background-color: currentColor;
   border-radius: 5px;
   vertical-align: middle;
   margin-bottom: 15px;
-  color:$gray;
+  color:$l_gray;
 }
 .featured_products{
   @include display_flex;
@@ -287,7 +287,7 @@ text-align: left;
   transform: scale(1.1);
 }
 .break{
-  border-top: 1px solid $gray;
+  border-top: 0.5px solid $l_gray;
   width: 95%;
 }
 .rated_break{
@@ -297,7 +297,6 @@ text-align: left;
 .card_footer{
   display: block;
   margin-right: 15px;
-  border-bottom: 1px solid $gray;
   a.link_rate,
   a.rate_footer{
     text-decoration: none;
@@ -313,6 +312,7 @@ text-align: left;
   }
 }
 .card{
+  border-bottom: 0.5px solid $l_gray;
   padding: 30px 0;
 }
 .img_rated{

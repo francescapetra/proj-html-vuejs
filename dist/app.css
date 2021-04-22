@@ -258,19 +258,20 @@ p.by {
 }
 
 .btn_hero {
+  padding: 17px 35px;
   color: #fff;
   font-size: 16px;
   margin-right: 10px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   background-color: transparent;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   border-radius: 30px;
   text-transform: uppercase;
 }
 
 .btn_hero:hover {
-  opacity: 0.7;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .btn_genre {
@@ -289,7 +290,7 @@ p.by {
 }
 
 .more {
-  padding: 10px 20px;
+  padding: 13px 25px;
   font-size: 12px;
 }
 
@@ -404,7 +405,11 @@ a.link_tag {
   margin: 5px 5px 5px 0;
   width: auto;
   display: inline-block;
-  border: 1px solid #a0a5a5;
+  border: 1px solid #64686c;
+}
+
+.border {
+  border-bottom: 1px solid #64686c;
 }
 
 .tag_container:hover {
@@ -615,14 +620,14 @@ section.sub_footer {
 .divider::before, .divider::after {
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 0.5px;
   width: 100%;
   max-width: 20%;
   background-color: currentColor;
   border-radius: 5px;
   vertical-align: middle;
   margin-bottom: 15px;
-  color: #a0a5a5;
+  color: lightgray;
 }
 
 .featured_products {
@@ -918,7 +923,7 @@ div.make_over:hover .overlay {
 }
 
 .break {
-  border-top: 1px solid #a0a5a5;
+  border-top: 0.5px solid lightgray;
   width: 95%;
 }
 
@@ -930,7 +935,6 @@ div.make_over:hover .overlay {
 .card_footer {
   display: block;
   margin-right: 15px;
-  border-bottom: 1px solid #a0a5a5;
 }
 .card a.link_rate,
 .card a.rate_footer,
@@ -951,6 +955,7 @@ div.make_over:hover .overlay {
 }
 
 .card {
+  border-bottom: 0.5px solid lightgray;
   padding: 30px 0;
 }
 

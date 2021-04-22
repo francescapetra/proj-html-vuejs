@@ -28,9 +28,6 @@ section.sub_footer{
   margin-bottom: 15px;
   color:$gray;
 }
-.btn_genre{
-  padding: 40px 0;
-}
 .featured_products{
   @include display_flex;
   justify-content: center;
@@ -307,7 +304,6 @@ text-align: left;
     vertical-align: top;
     padding-bottom: 5px;
     display: inline-block;
-
   }
   a.link_rate{
     color: $shark;
@@ -350,10 +346,4 @@ text-align: left;
   img{
     width: 100%;
   }
-}
-.isActive{
-  display:block;
-}
-.active{
-  display: none;
 }

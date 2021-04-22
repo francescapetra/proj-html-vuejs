@@ -34,6 +34,7 @@ section.sub_footer{
 .featured_products{
   @include display_flex;
   justify-content: center;
+  padding-top: 80px;
 }
 .img_product{
   height: 360px;

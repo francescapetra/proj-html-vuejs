@@ -2,16 +2,91 @@ var app = new Vue(
   {
     el: "#root",
     data: {
+      visible: true,
+      visible2: false,
+      visible3: false,
       contactIndex: 0,
-      // prova:[
-      //   {
-      //     img:"img/black_elegant_leather_jacket.jpg",
-      //   },
-      //   {
-      //     img: "img/black_leather_suit-400x520.jpg",
-      //   }
-      // ],
-
+      manProducts:[
+        {
+          img:"img/black_elegant_leather_jacket.jpg",
+          type: "Elegant Leather Jacket",
+          genre:"Men, jackets, Jeans",
+          originalPrice: "$295",
+          cost:"$ 200"
+        },
+        {
+          img: "img/black_leather_suit-400x520.jpg",
+          type: "Leather Korean Jacket",
+          genre:"Men, jackets, Jeans",
+          cost:"$ 176"
+        },
+        {
+          img: "img/blue_jacket_and_white_stripe_tee-400x520.jpg",
+          type: "Blue Jacket",
+          genre:"Men, jackets",
+          cost:"$ 580"
+        },
+        {
+          img: "img/modern_black_leather_suit-400x520.jpg",
+          type: "Modern Jacket",
+          genre:"Men, jackets",
+          cost:"$ 96"
+        },
+      ],
+      womanProducts:[
+        {
+          img:"img/spring_printed_dress.jpg",
+          type: "Dress Print",
+          genre:"Women",
+          originalPrice: "$195",
+          cost:"$ 127"
+        },
+        {
+          img: "img/modern_love_tee.jpg",
+          type: "Love Tee",
+          genre:"Women",
+          cost:"$ 25"
+        },
+        {
+          img: "img/black_leather_jacket.jpg",
+          type: "Jacket Hit",
+          genre:"Women",
+          cost:"$ 125"
+        },
+        {
+          img: "img/hipster_black_top.jpg",
+          type: "Rock Tee",
+          genre:"Women",
+          cost:"$ 35"
+        },
+      ],
+      accessoriesProducts:[
+        {
+          img:"img/brown_dress_shoes-400x520.jpg",
+          type: "Shoes Brown",
+          genre:"Accessories",
+          originalPrice: "$395",
+          cost:"$ 250"
+        },
+        {
+          img: "img/leather_gloves-400x520.jpg",
+          type: "Leather Gloves",
+          genre:"Accessories",
+          cost:"$ 45"
+        },
+        {
+          img: "img/casual_leather_belts-400x520.jpg",
+          type: "Cashmere Scarf",
+          genre:"Accessories",
+          cost:"$ 125"
+        },
+        {
+          img: "img/modern_leather_boots-400x520.jpg",
+          type: "Boots Leather",
+          genre:"Accessories",
+          cost:"$ 335"
+        },
+      ],
       isActive: false,
       iconsSocial:[
         {
@@ -158,7 +233,7 @@ var app = new Vue(
         },
         myFilter: function() {
         this.isActive = !this.isActive;
-        }
+      },
       },
       mounted () {
         window.addEventListener('scroll', this.onScroll)

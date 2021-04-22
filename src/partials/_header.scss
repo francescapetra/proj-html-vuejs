@@ -2,10 +2,10 @@
   // background-color: pink;
 }
 header{
-position: fixed;
-top: 0;
-background-color: #fff;
-z-index: 10;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
 }
 .nav_top, .nav_sub{
   display: flex;
@@ -21,18 +21,15 @@ z-index: 10;
   transition: 0.1s all ease-out;
 }
 .navbar {
-  altezza: 60px;
-  larghezza: 100vw;
-  sfondo: hsl (200, 50%, 50%);
-  posizione: fissa;
-  box-shadow: 0 2px 15px rgba (71, 120, 120, 0,5);
-  trasformare: translate3d (0, 0, 0);
-  transizione: 0.1s tutto a disagio;
+  width: 100vw;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
 }
 .navbar.navbar--hidden {
   box-shadow: none;
   display: none;
   transform: translate3d(0, -100%, 0);
+  transition: 0.5s all ease-out;
 }
 .social, .account, .logo, .nav_menu{
   @include display_flex;
@@ -69,8 +66,8 @@ z-index: 10;
     border: none;
     font-size: $font_16;
     color: $t_gray;
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 1px solid $l_gray;
+    border-right: 1px solid $l_gray;
     margin-left: 20px;
     padding: 0 10px;
     background-color: #fff;

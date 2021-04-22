@@ -92,6 +92,14 @@ button {
   color: black;
 }
 
+.act {
+  display: block;
+}
+
+.not {
+  display: none;
+}
+
 h1 {
   color: #fff;
   font-size: 78px;
@@ -261,6 +269,7 @@ p.by {
   border: 1px solid lightgray;
   padding: 13px 40px;
   color: #2a2f33;
+  margin: -2px;
 }
 
 .genre:focus {
@@ -435,19 +444,16 @@ header {
 }
 
 .navbar {
-  altezza: 60px;
-  larghezza: 100vw;
-  sfondo: hsl 200, 50%, 50%;
-  posizione: fissa;
-  box-shadow: 0 2px 15px rgba 71, 120, 120, 0, 5;
-  trasformare: translate3d 0, 0, 0;
-  transizione: 0.1s tutto a disagio;
+  width: 100vw;
+  transform: translate3d(0, 0, 0);
+  transition: 0.1s all ease-out;
 }
 
 .navbar.navbar--hidden {
   box-shadow: none;
   display: none;
   transform: translate3d(0, -100%, 0);
+  transition: 0.5s all ease-out;
 }
 
 .social, .account, .logo, .nav_menu {
@@ -615,7 +621,7 @@ section.sub_footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .img_product {
@@ -629,13 +635,10 @@ section.sub_footer {
   overflow: hidden;
 }
 
-.img_product_best {
-  position: relative;
-}
-
 div.make_over:hover .overlay {
-  opacity: 0.8;
+  opacity: 0.9;
   overflow: hidden;
+  box-shadow: inset 0 0 0 8px #8778b6;
 }
 
 .overlay {
@@ -647,7 +650,7 @@ div.make_over:hover .overlay {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-out;
   background: #f288b7;
   background: linear-gradient(360deg, #f288b7 3%, #99a5ee 98%);
   cursor: pointer;
@@ -724,7 +727,7 @@ div.make_over:hover .overlay {
   left: 50%;
   position: absolute;
   font-size: 40px;
-  color: lime;
+  color: #66CDAA;
 }
 
 .content_product {
@@ -732,7 +735,7 @@ div.make_over:hover .overlay {
 }
 
 .img_product_best {
-  height: 270px;
+  height: 280px;
   width: 220px;
   position: relative;
 }

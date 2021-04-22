@@ -2,10 +2,22 @@ var app = new Vue(
   {
     el: "#root",
     data: {
-      visible: true,
+      pippo: [],
+      min: 0,
+      max: 4,
+      showNavbar: true,
+      lastScrollPosition: 0,
+      btnIndex: 0,
+      manIndex:0,
+      visible1: true,
       visible2: false,
       visible3: false,
       contactIndex: 0,
+      buttonsGenre:[
+        "Men",
+        "Women",
+        "Accessories"
+      ],
       manProducts:[
         {
           img:"img/black_elegant_leather_jacket.jpg",
@@ -72,11 +84,11 @@ var app = new Vue(
           img: "img/leather_gloves-400x520.jpg",
           type: "Leather Gloves",
           genre:"Accessories",
-          cost:"$ 45"
+          cost:"$ 145"
         },
         {
           img: "img/casual_leather_belts-400x520.jpg",
-          type: "Cashmere Scarf",
+          type: "Belt Squam",
           genre:"Accessories",
           cost:"$ 125"
         },
@@ -181,8 +193,6 @@ var app = new Vue(
           img: "img/hipster_black_top-120x156.jpg"
         },
       ],
-      showNavbar: true,
-      lastScrollPosition: 0,
       ratedTitle: "top rated products",
       postTitle: "recent post",
       tagTitle: "tags",
@@ -219,27 +229,41 @@ var app = new Vue(
         "Winter",
         ],
       },
-      methods:{
-        onScroll () {
-          const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
-          if (currentScrollPosition < 0) {
-            return
-          }
-          if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
-            return
-          }
-          this.showNavbar = currentScrollPosition < this.lastScrollPosition
-          this.lastScrollPosition = currentScrollPosition
-        },
-        myFilter: function() {
-        this.isActive = !this.isActive;
+    methods:{
+      onScroll () {
+        const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop
+        if (currentScrollPosition < 0) {
+          return
+        }
+        if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 50) {
+          return
+        }
+        this.showNavbar = currentScrollPosition < this.lastScrollPosition
+        this.lastScrollPosition = currentScrollPosition
       },
+      myFilter: function() {
+      this.isActive = !this.isActive;
       },
-      mounted () {
-        window.addEventListener('scroll', this.onScroll)
+      clickMan: function(){
+        this.min= 0;
+        this.max = 4;
       },
-      beforeDestroy () {
-        window.removeEventListener('scroll', this.onScroll)
+      clickWoman: function(){
+        this.min= 4;
+        this.max = 8;
+      },
+      clickAcc: function(){
+        this.min= 8;
+        this.max = 12;
       }
     },
+    mounted () {
+      window.addEventListener('scroll', this.onScroll);
+      this.pippo = [...this.manProducts,...this.womanProducts,...this.accessoriesProducts];
+
+    },
+    beforeDestroy () {
+      window.removeEventListener('scroll', this.onScroll)
+    }
+  },
 );

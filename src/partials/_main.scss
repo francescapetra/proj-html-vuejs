@@ -34,7 +34,7 @@ section.sub_footer{
 .featured_products{
   @include display_flex;
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 .img_product{
   height: 360px;
@@ -46,12 +46,11 @@ section.sub_footer{
   overflow: hidden;
   }
 }
-.img_product_best{
-  position: relative;
-}
 div.make_over:hover .overlay{
-  opacity: 0.8;
+  opacity: 0.9;
   overflow: hidden;
+  box-shadow: inset 0 0 0 8px $purple;
+  // transform: translateY(5px);
 }
 .overlay {
   position: absolute;
@@ -62,7 +61,7 @@ div.make_over:hover .overlay{
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-out;
   background: rgb(242,136,183);
   background: linear-gradient(360deg, rgba(242,136,183,1) 3%, rgba(153,165,238,1) 98%);
   cursor: pointer;
@@ -74,6 +73,7 @@ div.make_over:hover .overlay{
     padding-right: 10px;
     color: $whi;
   }
+
   p.product_type{
     font-size: $font_18;
   }
@@ -131,13 +131,13 @@ div.make_over:hover .overlay{
   left: 50%;
   position: absolute;
   font-size: $font_40;
-  color: lime;
+  color: $blue_sky;
 }
 .content_product{
 text-align: left;
 }
 .img_product_best{
-  height: 270px;
+  height: 280px;
   width: 220px;
   position: relative;
   img{
@@ -187,7 +187,7 @@ text-align: left;
     color: $whi;
     font-size: $font_9;
     display: inline-block;
-    background-color: lightgray;
+    background-color: $l_gray;
     padding: 20px 10px;
     cursor: pointer;
     margin-bottom: 30px;

@@ -64,14 +64,13 @@
         </div>
         <p class="sub_title">Must have products from our top sellers</p>
         <div class="btn_genre">
-
-          <button @click="visible = true, visible2 = false, visible3= false" class="btn genre" type="button" name="button">Men</button>
-          <button @click="visible = false, visible2 = true, visible3= false" class="btn genre" type="button" name="button">Women</button>
-          <button @click="visible = false, visible2 = false, visible3= true" class="btn genre" type="button" name="button">Accessories</button>
+          <button @click="clickMan" class="btn genre" type="button" name="button">Men</button>
+          <button @click="clickWoman" class="btn genre" type="button" name="button">Women</button>
+          <button @click="clickAcc" class="btn genre" type="button" name="button">Accessories</button>
         </div>
 
-        <div v-show="visible" class="featured_products">
-          <div v-for="(element,index) in manProducts" class="make_over">
+        <div class="featured_products">
+          <div v-for="(element,index) in pippo.slice(min,max)" class="make_over">
             <div class="img_product">
               <img :src= "element.img" alt="">
               <div class="overlay">
@@ -100,7 +99,7 @@
           </div>
         </div>
 
-        <div v-show="visible2" class="featured_products">
+        <!-- <div  class="featured_products">
           <div v-for="(element,index) in womanProducts" class="make_over">
             <div class="img_product">
               <img :src= "element.img" alt="">
@@ -130,7 +129,7 @@
           </div>
         </div>
 
-        <div v-show="visible3" class="featured_products">
+        <div  class="featured_products">
           <div v-for="(element,index) in accessoriesProducts" class="make_over">
             <div class="img_product">
               <img :src= "element.img" alt="">
@@ -158,7 +157,7 @@
                 </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </section>
       <!-- start section seasons -->
       <section class="container seasons">
@@ -297,11 +296,11 @@
         <div class="section_title featured container_small divider">
           <h2>New arrivals</h2>
         </div>
-        <p class="sub_title">Brand new products from top designer</p>
+        <p class="sub_title blog">Brand new products from top designer</p>
         <div class="featured_products container carousel">
           <i class="chevron fas fa-chevron-left"></i>
 
-          <div class="blog make_over">
+          <div class=" make_over">
             <div class=" new_product">
               <img src="img/black_elegant_leather_jacket-400x520.jpg" alt="">
               <div class="overlay">

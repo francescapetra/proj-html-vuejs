@@ -30,9 +30,10 @@
   opacity: 0.7;
 }
 .genre{
-  border: 1px solid lightgray;
+  border: 1px solid $l_gray;
   padding: 13px 40px;
   color:$shark;
+  margin: -2px;
 }
 .genre:focus{
   background-color: $whi;

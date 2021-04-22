@@ -10,9 +10,6 @@ var app = new Vue(
       lastScrollPosition: 0,
       btnIndex: 0,
       manIndex:0,
-      visible1: true,
-      visible2: false,
-      visible3: false,
       contactIndex: 0,
       buttonsGenre:[
         "Men",

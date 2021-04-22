@@ -638,7 +638,7 @@ section.sub_footer {
 div.make_over:hover .overlay {
   opacity: 0.9;
   overflow: hidden;
-  box-shadow: inset 0 0 0 8px #8778b6;
+  box-shadow: inset 0 0 0 1px #8778b6;
 }
 
 .overlay {
@@ -652,7 +652,7 @@ div.make_over:hover .overlay {
   opacity: 0;
   transition: 0.5s ease-out;
   background: #f288b7;
-  background: linear-gradient(360deg, #f288b7 3%, #99a5ee 98%);
+  background: linear-gradient(360deg, #f288b7 3%, #8c9dff 56%);
   cursor: pointer;
 }
 .overlay i.fa-shopping-cart,

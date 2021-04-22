@@ -244,18 +244,10 @@ var app = new Vue(
       myFilter: function() {
       this.isActive = !this.isActive;
       },
-      clickMan: function(){
-        this.min= 0;
-        this.max = 4;
+      clickGenre: function(min,max){
+        this.min= min;
+        this.max = max;
       },
-      clickWoman: function(){
-        this.min= 4;
-        this.max = 8;
-      },
-      clickAcc: function(){
-        this.min= 8;
-        this.max = 12;
-      }
     },
     mounted () {
       window.addEventListener('scroll', this.onScroll);

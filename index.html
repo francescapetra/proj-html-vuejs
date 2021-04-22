@@ -13,9 +13,9 @@
   <title>E-commerce</title>
 </head>
   <body>
-
+    <!-- root -->
     <div id="root">
-
+    <!-- root -->
       <header class="container">
         <div class="navbar":class="{ 'navbar--hidden': !showNavbar }">
           <div class="navbar container nav_container">
@@ -31,21 +31,19 @@
                 <button class="btn_cart" type="button" name="button"><i class="fas fa-shopping-cart"></i>{{menu.nameBtnCart}}<i class="fas fa-chevron-down"></i></button>
               </div>
             </nav>
-            </div>
+          </div>
         </div>
-
           <!-- sub nav -->
-          <nav class="nav_sub container_small">
-            <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a>
-            </div>
-            <div class="nav_menu">
-              <ul>
-                <li v-for="link in menuListNav"><a href="#">{{link.link}}<i :class="link.family + link.prefix + link.icon"></i> </a></li>
-              </ul>
-              <button class="btn btn_blue" type="button" name="button">shop now!</button>
-              <i class="search fas fa-search"></i>
-            </div>
-          </nav>
+        <nav class="nav_sub container_small">
+          <div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+          <div class="nav_menu">
+            <ul>
+              <li v-for="link in menuListNav"><a href="#">{{link.link}}<i :class="link.family + link.prefix + link.icon"></i> </a></li>
+            </ul>
+            <button class="btn btn_blue" type="button" name="button">shop now!</button>
+            <i class="search fas fa-search"></i>
+          </div>
+        </nav>
         <!-- top nav -->
       </header>
       <!-- hero -->
@@ -68,7 +66,7 @@
           <button @click="clickGenre(4,8)" class="btn genre" type="button" name="button">Women</button>
           <button @click="clickGenre(8,12)" class="btn genre" type="button" name="button">Accessories</button>
         </div>
-
+        <!-- ciclo del merged -->
         <div class="featured_products">
           <div v-for="(element,index) in featuredProducts.slice(min,max)" class="make_over">
             <div class="img_product">
@@ -88,76 +86,16 @@
                   <div class="text_list"><i class="fas fa-list"> Details</i></div>
                 </div>
               </div>
-                <div class="">
-                  <div class="content_product">
-                    <h5>{{element.type}}</h5>
-                    <p class="p_product">{{element.genre}}</p>
-                    <p class="p_price"> <span>{{element.originalPrice}}</span> {{element.cost}}</p>
-                  </div>
+              <div class="for_product">
+                <div class="content_product">
+                  <h5>{{element.type}}</h5>
+                  <p class="p_product">{{element.genre}}</p>
+                  <p class="p_price"> <span>{{element.originalPrice}}</span> {{element.cost}}</p>
                 </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- <div  class="featured_products">
-          <div v-for="(element,index) in womanProducts" class="make_over">
-            <div class="img_product">
-              <img :src= "element.img" alt="">
-              <div class="overlay">
-                <div :class="{active: isActive}" class=" product_type_list ">
-                  <p class=" product_type">{{element.type}}</p>
-                  <p class=" product_genre">{{element.genre}}</p>
-                  <p class=" product_cost">{{element.cost}}</p>
-                </div>
-                <div v-show="contactIndex === index" :class="{active: !isActive}" class=" product_type_list ">
-                  <p class="product_type_buy uppercase">Added to cart</p>
-                  <i class="product_buy fas fa-check-circle"></i>
-                </div>
-                <div class="ready_to_buy" @click='contactIndex = index'>
-                  <div class="text cart"><i @click="myFilter(contactIndex)" class="fas fa-shopping-cart"> Add to cart</i></div>
-                  <div class="text_list"><i class="fas fa-list"> Details</i></div>
-                </div>
-              </div>
-                <div class="">
-                  <div class="content_product">
-                    <h5>{{element.type}}</h5>
-                    <p class="p_product">{{element.genre}}</p>
-                    <p class="p_price"> <span>{{element.originalPrice}}</span> {{element.cost}}</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div  class="featured_products">
-          <div v-for="(element,index) in accessoriesProducts" class="make_over">
-            <div class="img_product">
-              <img :src= "element.img" alt="">
-              <div class="overlay">
-                <div :class="{active: isActive}" class=" product_type_list ">
-                  <p class=" product_type">{{element.type}}</p>
-                  <p class=" product_genre">{{element.genre}}</p>
-                  <p class=" product_cost">{{element.cost}}</p>
-                </div>
-                <div v-show="contactIndex === index" :class="{active: !isActive}" class=" product_type_list ">
-                  <p class="product_type_buy uppercase">Added to cart</p>
-                  <i class="product_buy fas fa-check-circle"></i>
-                </div>
-                <div class="ready_to_buy" @click='contactIndex = index'>
-                  <div class="text cart"><i @click="myFilter(contactIndex)" class="fas fa-shopping-cart"> Add to cart</i></div>
-                  <div class="text_list"><i class="fas fa-list"> Details</i></div>
-                </div>
-              </div>
-                <div class="">
-                  <div class="content_product">
-                    <h5>{{element.type}}</h5>
-                    <p class="p_product">{{element.genre}}</p>
-                    <p class="p_price"> <span>{{element.originalPrice}}</span> {{element.cost}}</p>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div> -->
       </section>
       <!-- start section seasons -->
       <section class="container seasons">
@@ -188,10 +126,9 @@
         <div class="section_title featured divider">
           <h2>Best Seller</h2>
         </div>
-          <p class="sub_title">Must have products from our top sellers</p>
+        <p class="sub_title">Must have products from our top sellers</p>
         <div class="featured_products carousel">
           <i class="chevron fas fa-chevron-left"></i>
-
           <div class="make_over">
             <div class="img_product_best">
               <img src="img/spring_printed_dress.jpg" alt="">
@@ -206,7 +143,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class="img_product_best">
               <img src="img/modern_love_tee.jpg" alt="">
@@ -221,7 +157,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class="img_product_best">
               <img src="img/black_leather_jacket.jpg" alt="">
@@ -236,7 +171,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class="img_product_best">
               <img src="img/black_elegant_leather_jacket-400x520.jpg" alt="">
@@ -251,7 +185,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class="img_product_best">
               <img src="img/hipster_black_top.jpg" alt="">
@@ -266,7 +199,6 @@
               </div>
             </div>
           </div>
-
           <i class="chevron fas fa-chevron-right"></i>
         </div>
       </section>
@@ -299,7 +231,6 @@
         <p class="sub_title blog">Brand new products from top designer</p>
         <div class="featured_products container carousel">
           <i class="chevron fas fa-chevron-left"></i>
-
           <div class=" make_over">
             <div class=" new_product">
               <img src="img/black_elegant_leather_jacket-400x520.jpg" alt="">
@@ -314,7 +245,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class=" new_product">
               <img src="img/hipster_black_top.jpg" alt="">
@@ -329,7 +259,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class=" new_product">
               <img src="img/black_leather_suit-400x520.jpg" alt="">
@@ -344,7 +273,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class=" new_product">
               <img src="img/spring_printed_dress.jpg" alt="">
@@ -359,7 +287,6 @@
               </div>
             </div>
           </div>
-
           <div class="make_over">
             <div class=" new_product">
               <img src="img/modern_love_tee-400x520.jpg" alt="">
@@ -374,7 +301,6 @@
               </div>
             </div>
           </div>
-
           <i class="chevron fas fa-chevron-right"></i>
         </div>
       </section>
@@ -420,27 +346,28 @@
         <div class="flex blog">
           <div class="img_blog">
             <img src="img/post_img_12-700x441.jpg" alt="">
-              <div class="content_product_blog">
-                <h5>Aenean lobortis sapien enim viverra</h5>
-                <p class="p_date">September 9th, 2015|0 Comments</p>
-                <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla</p>
-              </div>
+            <div class="content_product_blog">
+              <h5>Aenean lobortis sapien enim viverra</h5>
+              <p class="p_date">September 9th, 2015|0 Comments</p>
+              <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla</p>
+            </div>
           </div>
           <div class="img_blog">
             <img src="img/post_img_11-700x441.jpg" alt="">
-              <div class="content_product">
-                <h5>Duis ac massa semper maximus</h5>
-                <p class="p_date">September 9th, 2015|0 Comments</p>
-                <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla,</p>
-              </div>
+            <div class="content_product">
+              <h5>Duis ac massa semper maximus</h5>
+              <p class="p_date">September 9th, 2015|0 Comments</p>
+              <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla,</p>
+            </div>
           </div>
           <div class="img_blog">
-            <img src="img/post_img_10-700x441.jpg" alt="">
-              <div class="content_product">
-                <h5>Nunc fermint nulla eu justo sem id</h5>
-                <p class="p_date">September 9th, 2015|0 Comments</p>
-                <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla,</p>
-              </div>
+          <img src="img/post_img_10-700x441.jpg" alt="">
+            <div class="content_product">
+              <h5>Nunc fermint nulla eu justo sem id</h5>
+              <p class="p_date">September 9th, 2015|0 Comments</p>
+              <p class="p_blog">Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla,</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- start section rated -->
@@ -448,7 +375,6 @@
         <div class="container break center">
           <div class="container_small rated_break flex">
             <div class="container_small">
-
               <div class="card  flex">
                 <h6 class="left table_rate">featured</h6>
                 <div class="card_products flexspace">
@@ -461,7 +387,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -481,7 +406,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -493,10 +417,8 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="container_small">
-
               <div class="card flex">
                 <h6 class="left table_rate">on sale</h6>
                 <div class="card_products flexspace">
@@ -509,14 +431,12 @@
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
                     </div>
-
                   </div>
                   <div class="img_rated">
                     <img src="img/black_elegant_leather_jacket-120x156.jpg" alt="">
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -528,7 +448,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -541,10 +460,8 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="container_small">
-
               <div class="card container_xsmall flex">
                 <h6 class="left table_rate">top rated</h6>
                 <div class="card_products flexspace">
@@ -564,7 +481,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -584,7 +500,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -603,10 +518,8 @@
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="container_small">
-
               <div class="card container_xsmall flex">
                 <h6 class="left table_rate">latest reviews</h6>
                 <div class="card_products flexspace">
@@ -627,7 +540,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -647,7 +559,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="card container_xsmall flex">
                 <div class="card_products flexspace">
                   <div class="left">
@@ -660,7 +571,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -706,7 +616,6 @@
       <!-- footer body -->
       <section class="main_footer">
         <div  class="container_small  flexspace">
-
           <div class="contacts address_in">
             <div class="logo_footer">
               <img src="img/classic_shop_logo_footer.png" alt="">
@@ -725,7 +634,6 @@
               </ul>
             </div>
           </div>
-
           <div class="contacts rated ">
             <h6 class="left rated_title_footer">{{ratedTitle}}</h6>
             <div v-for="element in ratedFooter" class="card_footer flex">
@@ -744,7 +652,6 @@
               </div>
             </div>
           </div>
-
           <div class="contacts post_link ">
             <h6 class="left rated_title_footer">{{postTitle}}</h6>
             <div v-for="post in recentPost" class="card_footer">
@@ -753,7 +660,6 @@
               </ul>
             </div>
           </div>
-
           <div class="contacts">
             <h6 class="left rated_title_footer">{{tagTitle}}</h6>
             <div class="tags">
@@ -762,6 +668,7 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
       <!-- payment_cards_footer -->
       <section class="sub_footer">
@@ -773,10 +680,10 @@
         </div>
       </section>
       </footer>
-
+    <!-- chiusura root -->
     </div>
-
+    <!-- script -->
     <script src="js/script.js" charset="utf-8"></script>
-
+    <!-- script -->
   </body>
 </html>

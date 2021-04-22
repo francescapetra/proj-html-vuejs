@@ -237,6 +237,10 @@ p.by {
   margin-top: 9px;
 }
 
+.margin {
+  margin-top: 10px;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 30px;

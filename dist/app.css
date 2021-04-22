@@ -879,10 +879,10 @@ div.make_over:hover .overlay {
 }
 
 .bullet {
-  padding-top: 25px;
+  padding-top: 50px;
 }
 .bullet .circle {
-  font-size: 11px;
+  font-size: 12px;
   margin-right: 3px;
 }
 .bullet .circle:hover {

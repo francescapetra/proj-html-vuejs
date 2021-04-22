@@ -2,7 +2,8 @@ var app = new Vue(
   {
     el: "#root",
     data: {
-      pippo: [],
+      visible: true,
+      featuredProducts: [],
       min: 0,
       max: 4,
       showNavbar: true,
@@ -251,7 +252,7 @@ var app = new Vue(
     },
     mounted () {
       window.addEventListener('scroll', this.onScroll);
-      this.pippo = [...this.manProducts,...this.womanProducts,...this.accessoriesProducts];
+      this.featuredProducts = [...this.manProducts,...this.womanProducts,...this.accessoriesProducts];
 
     },
     beforeDestroy () {

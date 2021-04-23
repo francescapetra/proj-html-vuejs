@@ -3,14 +3,81 @@ var app = new Vue(
     el: "#root",
     data: {
       visible: true,
-      featuredProducts: [],
-      min: 0,
-      max: 4,
+
       showNavbar: true,
       lastScrollPosition: 0,
-      btnIndex: 0,
-      manIndex:0,
+
       contactIndex: 0,
+      isActive: false,
+
+      min: 0,
+      max: 4,
+
+      iconsSocial:[
+        {
+          name: 'facebook-f',
+          family: 'fab ',
+          prefix: 'fa-',
+        },
+        {
+          name: 'twitter',
+          family: 'fab ',
+          prefix: 'fa-',
+        },
+        {
+          name: 'instagram',
+          family: 'fab ',
+          prefix: 'fa-',
+        },
+        {
+          name: 'youtube',
+          family: 'fab ',
+          prefix: 'fa-',
+        },
+    ],
+      shoppingNav:[
+        {
+          name: "Shopping Cart",
+          nameBtn: "My Account",
+          nameBtnCart: "Cart",
+        }
+      ],
+      menuListNav:[
+        {
+          link: "Home",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
+        },
+        {
+          link: "Shop",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
+        },
+        {
+          link: "Products",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
+        },
+        {
+          link: "Categories",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
+        },
+        {
+          link: "News"
+        },
+        {
+          link: "Elements",
+          icon: 'chevron-down',
+          family: 'fas ',
+          prefix: 'fa-',
+        },
+      ],
+
       buttonsGenre:[
         "Men",
         "Women",
@@ -97,71 +164,8 @@ var app = new Vue(
           cost:"$ 335"
         },
       ],
-      isActive: false,
-      iconsSocial:[
-        {
-          name: 'facebook-f',
-          family: 'fab ',
-          prefix: 'fa-',
-        },
-        {
-          name: 'twitter',
-          family: 'fab ',
-          prefix: 'fa-',
-        },
-        {
-          name: 'instagram',
-          family: 'fab ',
-          prefix: 'fa-',
-        },
-        {
-          name: 'youtube',
-          family: 'fab ',
-          prefix: 'fa-',
-        },
-    ],
-      shoppingNav:[
-        {
-          name: "Shopping Cart",
-          nameBtn: "My Account",
-          nameBtnCart: "Cart",
-        }
-      ],
-      menuListNav:[
-        {
-          link: "Home",
-          icon: 'chevron-down',
-          family: 'fas ',
-          prefix: 'fa-',
-        },
-        {
-          link: "Shop",
-          icon: 'chevron-down',
-          family: 'fas ',
-          prefix: 'fa-',
-        },
-        {
-          link: "Products",
-          icon: 'chevron-down',
-          family: 'fas ',
-          prefix: 'fa-',
-        },
-        {
-          link: "Categories",
-          icon: 'chevron-down',
-          family: 'fas ',
-          prefix: 'fa-',
-        },
-        {
-          link: "News"
-        },
-        {
-          link: "Elements",
-          icon: 'chevron-down',
-          family: 'fas ',
-          prefix: 'fa-',
-        },
-      ],
+      featuredProducts: [],
+
       ratedFooter:[
         {
           dressName: "Black Jacket",
@@ -250,7 +254,6 @@ var app = new Vue(
     mounted () {
       window.addEventListener('scroll', this.onScroll);
       this.featuredProducts = [...this.manProducts,...this.womanProducts,...this.accessoriesProducts];
-
     },
     beforeDestroy () {
       window.removeEventListener('scroll', this.onScroll)
